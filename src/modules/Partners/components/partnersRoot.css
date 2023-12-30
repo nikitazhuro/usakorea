@@ -1,0 +1,27 @@
+.partners-root {
+  width: 100%;
+  padding: 0 60px;
+  margin-top: 43px;
+  height: 171px;
+}
+
+.partners-root-block {
+  height: 100%;
+  display: flex;
+}
+
+.partners-root-block__item {
+  height: 100%;
+  min-width: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(220, 220, 220, 0.70);
+  border-bottom: 1px solid rgba(220, 220, 220, 0.70);
+  border-left: 1px solid rgba(220, 220, 220, 0.70);
+  background: #FFF;
+}
+.partners-root-block__item:last-child {
+  border-right: 1px solid rgba(220, 220, 220, 0.70);
+}

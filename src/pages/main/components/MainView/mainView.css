@@ -1,0 +1,125 @@
+.main-view {
+  width: 100%;
+  height: calc(100vh - 72px);
+  position: relative;
+}
+
+.main-view-content {
+  display: flex;
+  width: 100%;
+}
+
+.main-offer__left {
+  color: #34343D;
+  margin-left: 60px;
+  margin-top: 70px;
+  width: calc(100% - 780px);
+}
+
+.main-offer__right {
+  width: 780px;
+  height: 100%;
+  background-color: #123974E5;
+  position: relative;
+}
+
+.left-content {
+  text-align: left;
+  max-width: 917px;
+}
+
+.offer-button {
+  width: 287px;
+  height: 72px;
+  background-color: #122E74;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.offer-description-1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 72px;
+}
+
+.offer-description-1 span {
+  color: #122E74;
+}
+
+.offer-description-2 {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #34343D;
+  margin-top: 32px;
+  margin-bottom: 52px;
+  max-width: 445px;
+}
+
+.offers-list-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.offers-list {
+  display: flex;
+  justify-content: space-between;
+  margin:  0 60px;
+}
+
+.offer-item {
+  min-width: 360px;
+  height: 200px;
+  color: white;
+  display: flex;
+  background-color: white;
+  padding: 24px 32px;
+  text-align: left;
+}
+
+.offer-item--first {
+  background: url(../../../../assets/car2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer-item--second,
+.offer-item--third,
+.offer-item--forth {
+  border-right: 1px solid #DCDCDCB2
+}
+
+.offer-item__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  color: #122E74;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+}
+
+.offer-item__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #34343D;
+  margin-top: 12px;
+}
+
+.car-block {
+  position: absolute;
+  right: 0;
+  top: -80px;
+}
+.wheel {
+  position: absolute;
+  right: 0;
+}
