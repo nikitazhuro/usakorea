@@ -39,8 +39,8 @@
 .left_arrow, .right_arrow {
   border: none;
   background-color: transparent;
-  width: 72px;
-  height: 91px;
+  height: 72px;
+  width: 91px;
   display: flex;
   align-items: center;
   justify-content: center;
