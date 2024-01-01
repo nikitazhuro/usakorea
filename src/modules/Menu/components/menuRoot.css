@@ -2,13 +2,16 @@
   height: 72px;
   align-items: center;
   background-color: white;
+  justify-content: center;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
   align-items: center;
+  max-width: 1920px;
 }
 
 .menu-list {

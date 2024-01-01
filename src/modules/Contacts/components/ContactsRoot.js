@@ -1,44 +1,26 @@
 import { Col, Row } from "antd";
-
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import './contactsRoot.css';
+
+import ContactsInfo from "./ContactsInfo";
 
 const ContactsRoot = () => {
   return (
     <Row className="contacts-root">
-      <Col span={24} className="contacts-block">
-        <h1>Контакты</h1>
-        <div className="contacts-content">
-          <div className="contacts-info">
-            <div className="contacts-info__row">
-              <div className="contacts-info__item">
-                <h3>Реквизиты</h3>
-                <div>ИП Гапонов Николай Анатольевич УНП 491626991BY57 ALFA 3013 2C31 2100 1027 0000 ЗАО "Альфа-Банк" 220013,г. Минск, ул. Сурганова, 43-47 ALFABY2X</div>
-              </div>
-              <div className="contacts-info__item">
-                <h3>Адрес</h3>
-                <div>Гомель,ул.Ветковская 1</div>
-              </div>
-            </div>
-            <div className="contacts-info__row">
-              <div className="contacts-info__item">
-                <h3>Телефоны</h3>
-                <div>
-                  <div>+375 29 694 34 30</div>
-                  <div>+375 44 757 92 57</div>
-                  <div>+375 33 636 88 89</div>
-                </div>
-
-              </div>
-              <div className="contacts-info__item">
-                <h3>Email</h3>
-                <div>usakoreaby@yandex.ru</div>
-              </div>
+      <Col span={24} className="contacts-wrapper">
+        <Col span={24} className="contacts-block">
+          <h1>Контакты</h1>
+          <div className="contacts-content">
+            <ContactsInfo />
+            <div className="map">
+              <YMaps>
+                <Map className="yandex-map" defaultState={{ center: [52.434385, 31.000097], zoom: 13 }}>
+                  <Placemark geometry={[52.434385, 31.000097]} />
+                </Map>
+              </YMaps>
             </div>
           </div>
-          <div className="map">
-
-          </div>
-        </div>
+        </Col>
       </Col>
     </Row>
   )

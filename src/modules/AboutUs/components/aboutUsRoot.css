@@ -1,12 +1,19 @@
 .about-us-root {
   margin-top: 104px;
-  padding: 0 60px;
   width: 100%;
   height: 709px;
 }
 
-.about-us-root-block {
+.about-us-root-wrapper {
   width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-root-block {
+  max-width: 1800px;
+  margin: 0 60px;
   height: 100%;
   display: flex;
 }

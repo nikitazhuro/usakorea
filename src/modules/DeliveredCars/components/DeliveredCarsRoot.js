@@ -12,21 +12,23 @@ import Carousel from "../../../components/Carousel/Carousel";
 const DeliveredCarsRoot = () => {
   return (
     <Row className="delivered-cars-root">
-      <Col span={24} className="delivered-cars-block">
-        <Carousel title='Доставленные автомобили для наших клиентов'>
-          <div className="carousel_item">
-            <img src={deliveredCar1} alt="image" />
-          </div>
-          <div className="carousel_item">
-            <img src={deliveredCar2} alt="image" />
-          </div>
-          <div className="carousel_item">
-            <img src={deliveredCar1} alt="image" />
-          </div>
-          <div className="carousel_item">
-            <img src={deliveredCar2} alt="image" />
-          </div>
-        </Carousel>
+      <Col span={24} className="delivered-cars-wrapper">
+        <Col span={24} className="delivered-cars-block">
+          <Carousel title='Доставленные автомобили для наших клиентов'>
+            <div className="carousel_item">
+              <img src={deliveredCar1} alt="image" />
+            </div>
+            <div className="carousel_item">
+              <img src={deliveredCar2} alt="image" />
+            </div>
+            <div className="carousel_item">
+              <img src={deliveredCar1} alt="image" />
+            </div>
+            <div className="carousel_item">
+              <img src={deliveredCar2} alt="image" />
+            </div>
+          </Carousel>
+        </Col>
       </Col>
     </Row>
   )

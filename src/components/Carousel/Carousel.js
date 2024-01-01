@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
+import { ReactComponent as ArrowLeft } from '../../assets/arrow-left.svg';
+import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
+
 import './carousel.css';
 
 const Carousel = ({ children, title, maxLength }) => {
@@ -48,13 +51,13 @@ const Carousel = ({ children, title, maxLength }) => {
             onClick={prev}
             className={`left_arrow ${currentIndex === 0 ? 'disableArrow' : ''}`}
           >
-            <span>&lt;</span>
+            <span><ArrowLeft /></span>
           </div>
           <div
             onClick={next}
             className={`right_arrow ${currentIndex === 3 ? 'disableArrow' : ''}`}
           >
-            <span>&gt;</span>
+            <span><ArrowRight /></span>
           </div>
         </div>
       </div>

@@ -1,11 +1,19 @@
 .reviews-root {
-  margin-top: 160px;
+  padding-top: 160px;
   width: 100%;
-  height: 560px;
+  height: 720px;
+  background-color: #F8F8F8;
+}
+.reviews-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .reviews-block {
-  padding: 0 calc(60px - 0.5%);
+  max-width: calc(1800px + 0.5%);
+  margin: 0 calc(60px - 0.5%);
 }
 
 .reviews-root .carousel_header__title {

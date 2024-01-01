@@ -2,6 +2,9 @@
 import AboutUsRoot from "../../../modules/AboutUs";
 import ContactsRoot from "../../../modules/Contacts";
 import DeliveredCarsRoot from "../../../modules/DeliveredCars";
+import DeliveryReasonsRoot from "../../../modules/DeliveryReasons";
+import FooterRoot from "../../../modules/Footer";
+import HowWeWorkRoot from "../../../modules/HowWeWork";
 import NeedConsultationRoot from "../../../modules/NeedConsultation";
 import PartnersRoot from "../../../modules/Partners";
 import PriceListRoot from "../../../modules/PriceList";
@@ -19,10 +22,13 @@ const MainPage = () => {
       <NeedConsultationRoot />
       <AboutUsRoot />
       <PartnersRoot />
+      <HowWeWorkRoot />
       <DeliveredCarsRoot />
+      <DeliveryReasonsRoot />
       <PriceListRoot />
       <ReviewsRoot />
       <ContactsRoot />
+      <FooterRoot />
     </div>
   )
 }

@@ -6,6 +6,7 @@ import { ReactComponent as CalcIcon } from '../../../../assets/calc.svg';
 import { ReactComponent as CertIcon } from '../../../../assets/cert.svg';
 
 import image from '../../../../assets/image1.png';
+import image1 from '../../../../assets/qwe.png';
 import image2 from '../../../../assets/image 2.png';
 
 import './mainView.css';
@@ -40,46 +41,50 @@ const extra_offers = [
 const MainView = () => {
   return (
     <Row className="main-view">
-      <Col span={24} className="main-view-content">
-        <Col className="main-offer__left">
-          <Col className="left-content">
-            <Col className="offer-description-1"><span>Найдем автомобиль,</span> который превзойдет ваши ожидания</Col>
+      <Col span={24} className="main-view-wrapper">
+        <Col span={24} className="main-view-block">
+          <Col span={24} className="main-view-content">
+            <Col className="main-offer__left">
+              <Col className="left-content">
+                <Col className="offer-description-1"><span>Найдем автомобиль,</span> который превзойдет ваши ожидания</Col>
 
-            <Col className="offer-description-2">Подбор, покупка и доставка авто из США, Южной Кореи и Китая с реальной денежной выгодой до 40% от рынка РБ</Col>
+                <Col className="offer-description-2">Подбор, покупка и доставка авто из США, Южной Кореи и Китая с реальной денежной выгодой до 40% от рынка РБ</Col>
 
-            <Button className="offer-button">
-              Подобрать
-            </Button>
-          </Col>
-        </Col>
-
-        <Col className="main-offer__right">
-          <img className="wheel" src={image2} alt='car' />
-        </Col>
-      </Col>
-
-      <Col span={24} className="offers-list-wrapper">
-        <Col span={24} className="offers-list">
-          <Col className="offer-item offer-item--first" />
-
-          {extra_offers.map((elem) => (
-            <Col className={`offer-item ${elem.extraClass}`}>
-              <Col>
-                <Col className="offer-item__title">
-                  <span>{elem.title}</span>
-                  {elem.icon}
-                </Col>
-                <Col className="offer-item__description">
-                  <span>{elem.description}</span>
-                </Col>
+                <Button className="offer-button">
+                  Подобрать
+                </Button>
               </Col>
             </Col>
-          ))}
-        </Col>
-      </Col>
 
-      <Col span={24} className="car-block">
-        <img src={image} alt='car' />
+            <Col className="main-offer__right">
+              <img className="wheel" src={image2} alt='car' />
+            </Col>
+          </Col>
+
+          <Col span={24} className="offers-list-wrapper">
+            <Col span={24} className="offers-list">
+              <Col className="offer-item offer-item--first" />
+
+              {extra_offers.map((elem) => (
+                <Col className={`offer-item ${elem.extraClass}`}>
+                  <Col>
+                    <Col className="offer-item__title">
+                      <span>{elem.title}</span>
+                      {elem.icon}
+                    </Col>
+                    <Col className="offer-item__description">
+                      <span>{elem.description}</span>
+                    </Col>
+                  </Col>
+                </Col>
+              ))}
+            </Col>
+          </Col>
+
+          <Col span={24} className="car-block">
+            <img src={image} alt='car' />
+          </Col>
+        </Col>
       </Col>
     </Row>
   )
