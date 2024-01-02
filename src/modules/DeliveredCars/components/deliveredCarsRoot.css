@@ -24,3 +24,9 @@
   font-weight: 600;
   line-height: 48px;
 }
+
+.carousel_item img {
+  width: 890px;
+  height: 620px;
+  object-fit: cover;
+}

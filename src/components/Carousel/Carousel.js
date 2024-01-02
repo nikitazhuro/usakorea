@@ -11,7 +11,7 @@ const Carousel = ({ children, title, maxLength }) => {
   const [defaultTransform, setDefaultTransForm] = useState(50);
 
   const next = () => {
-    if (currentIndex < 2) {
+    if (currentIndex < maxLength - 2) {
       setCurrentIndex((prevState) => prevState + 1);
     }
   };

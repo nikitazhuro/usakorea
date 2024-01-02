@@ -10,6 +10,7 @@ import image1 from '../../../../assets/qwe.png';
 import image2 from '../../../../assets/image 2.png';
 
 import './mainView.css';
+import { createOrderRequest } from "../../../../lib/api/orderApi";
 
 const extra_offers = [
   {
@@ -39,6 +40,14 @@ const extra_offers = [
 ]
 
 const MainView = () => {
+  const createOrder = async () => {
+    const config = {
+      name: 'Nikita',
+      number: '+375203939399'
+    }
+
+    await createOrderRequest(config);
+  }
   return (
     <Row className="main-view">
       <Col span={24} className="main-view-wrapper">
@@ -50,7 +59,7 @@ const MainView = () => {
 
                 <Col className="offer-description-2">Подбор, покупка и доставка авто из США, Южной Кореи и Китая с реальной денежной выгодой до 40% от рынка РБ</Col>
 
-                <Button className="offer-button">
+                <Button onClick={createOrder} className="offer-button">
                   Подобрать
                 </Button>
               </Col>
