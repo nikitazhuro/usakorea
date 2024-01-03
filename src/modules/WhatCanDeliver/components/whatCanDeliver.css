@@ -38,7 +38,6 @@
 
 .what-can-deliver-root__content {
   width: 100%;
-  height: 448px;
 }
 
 .what-can-deliver-root__order button {
@@ -109,4 +108,52 @@
 .deliver-card__image__img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+  .what-can-deliver-block {
+    margin: 0;
+    max-width: 1920px;
+  }
+
+  .what-can-deliver-root {
+    padding: 160px 60px;
+  }
+
+  .deliver-card {
+    max-width: 450px;
+    width: 100%;
+  }
+  .deliver-card__image {
+    width: auto;
+  }
+
+  .deliver-card:last-child .deliver-card__image__img {
+    width: 100%;
+    height: 100%;
+  }
+  .deliver-card__image__img {
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .deliver-card__image {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .what-can-deliver-root__header h1 {
+    font-size: 44px;
+    line-height: 48px;
+  }
+  .deliver-card {
+    padding: 12px;
+  }
+  .deliver-desc__header {
+    font-size: 18px;
+  }
+  .deliver-desc__content {
+    font-size: 14px;
+  }
 }

@@ -1,7 +1,6 @@
 .how-we-work-root {
   width: 100%;
   margin-top: 160px;
-  height: 689px;
 }
 
 .we-wort-block {
@@ -35,10 +34,15 @@
   margin-left: 60px;
 }
 
+.we-work__left-inside img {
+  width: 100%;
+}
+
 .we-work__right-inside {
   display: flex;
   flex-direction: column;
   margin-right: 60px;
+  text-align: start;
 }
 
 .we-work__right-inside__item {
@@ -69,4 +73,39 @@
 .we-work-item__title {
   color: #34343D;
   font-size: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+  .we-work__left {
+    width: 800px;
+  }
+  .we-wort-block {
+    gap: 60px;
+  }
+  .we-work__right-inside__item {
+    gap: 90px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .we-wort-block {
+    gap: 20px;
+  }
+  .we-work__right-inside__item {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .we-wort-block {
+    flex-direction: column;
+  }
+  .we-work__left {
+    max-width: 800px;
+    width: 100%;
+  }
+  .we-work__right {
+    max-width: 900px;
+    width: 100%;
+    margin-left: 60px;
+  }
 }
