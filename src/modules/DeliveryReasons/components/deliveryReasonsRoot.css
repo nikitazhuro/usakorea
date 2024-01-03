@@ -36,7 +36,8 @@
 }
 
 .reason-item {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 267px;
   background-color: #FFF;
   display: flex;
@@ -54,6 +55,7 @@
   font-weight: 600;
   align-items: center;
   gap: 32px;
+  text-align: start;
 }
 
 .reason-item__header__icon-block {
@@ -69,7 +71,36 @@
   text-align: start;
   color: #34343D;
   font-size: 16px;
-  width: 325px;
+  max-width: 325px;
+  width: 100%;
   margin-left: 32px;
   margin-top: 32px;
+}
+
+@media screen and (max-width: 1700px) {
+  .reason-item__header {
+    font-size: 20px;
+    gap: 10px;
+  }
+  .reason-item__content {
+    width: auto;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .reason-item__header {
+    font-size: 18px;
+  }
+  .reason-item__header__icon-block {
+    width: 60px;
+    height: 60px;
+  }
+  .reason-item__header__icon-block svg{
+    width: 36px;
+    height: 36px;
+  }
+  .reason-item__content {
+    font-size: 14px;
+  }
 }

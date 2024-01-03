@@ -13,14 +13,14 @@ const PriceListRoot = () => {
           </div>
           <div className="price-list__content">
             <div className="price-list__content__conditions">
-              <div>
+              <div className="price-list__content__conditions__item">
                 <ConditionItem title="Подбор актуальных вариантов" />
                 <ConditionItem title="Предварительный детальный расчет" />
                 <ConditionItem title="Консультации по возможному ремонту" />
                 <ConditionItem title="Проверка истории" />
                 <ConditionItem title="Безлимит ставок / участий в аукционах" />
               </div>
-              <div>
+              <div className="price-list__content__conditions__item">
                 <ConditionItem title="Консультация по вопросу оплаты (банк, комиссия и тд)" />
                 <ConditionItem title="Своевременное предоставление информации движении т/с" />
                 <ConditionItem title="Консультация по таможенному оформлению" />

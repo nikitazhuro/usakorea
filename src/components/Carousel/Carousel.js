@@ -23,15 +23,16 @@ const Carousel = ({ children, title, maxLength }) => {
   };
 
   const handleResize = () => {
-    if (window.innerWidth > 1440) {
-      setDefaultTransForm(20);
-    } else if (window.innerWidth <= 1440) {
-      setDefaultTransForm(25);
+    if (window.innerWidth > 992) {
+      setDefaultTransForm(50);
+    } else if (window.innerWidth <= 992) {
+      setDefaultTransForm(100);
     }
   };
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
+    handleResize();
 
     return () => {
       window.removeEventListener('resize', handleResize);

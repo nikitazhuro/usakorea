@@ -24,10 +24,10 @@ const MainPage = () => {
       <PartnersRoot />
       <HowWeWorkRoot />
       <DeliveredCarsRoot />
-      {/* <DeliveryReasonsRoot />
+      <DeliveryReasonsRoot />
       <PriceListRoot />
       <ReviewsRoot />
-      <ContactsRoot />
+      {/* <ContactsRoot />
       <FooterRoot /> */}
     </div>
   )
