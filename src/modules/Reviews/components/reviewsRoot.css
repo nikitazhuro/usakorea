@@ -31,7 +31,6 @@
 }
 
 .review-item {
-  height: 368px;
   background-color: white;
   width: 100%;
   padding: 40px;
@@ -93,7 +92,6 @@
   }
   .review-item {
     padding: 24px;
-    height: auto;
   }
   .reviews-root .carousel_header__title {
     font-size: 24px;

@@ -1,13 +1,21 @@
 import { Button, Col, Row } from "antd";
-import React from 'react';
+import React, { useState } from 'react';
 
 import image from '../../../assets/aboutus.png';
-
 import './aboutUsRoot.css';
 
+import OrderModal from "../../../components/OrderModal/OrderModal";
+
 const AboutUsRoot = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openOrderModal = () => {
+    setIsOpen(true);
+  }
+
   return (
     <Row className="about-us-root">
+      <OrderModal isOpen={isOpen} setIsOpen={setIsOpen} />
       <Col span={24} className="about-us-root-wrapper">
         <Col span={24} className="about-us-root-block">
           <Col span={12} className="about-us-content">
@@ -19,7 +27,7 @@ const AboutUsRoot = () => {
             <div className="about-us-content__desc2">
               Только слаженная работа и ответственное отношение к делу позволяет получить положительные результаты.
             </div>
-            <Button className="about-us-content__submit">
+            <Button className="about-us-content__submit" onClick={openOrderModal}>
               Подобрать авто
             </Button>
           </Col>

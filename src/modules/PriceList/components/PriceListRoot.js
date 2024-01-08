@@ -1,11 +1,21 @@
 import { Button, Col, Row } from "antd";
+import { useState } from "react";
 
 import './priceListRoot.css';
+
 import ConditionItem from "./ConditionItem";
+import OrderModal from "../../../components/OrderModal/OrderModal";
 
 const PriceListRoot = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openOrderModal = () => {
+    setIsOpen(true);
+  }
+
   return (
     <Row className="price-list-root">
+      <OrderModal isOpen={isOpen} setIsOpen={setIsOpen} />
       <Col span={24} className="price-list-wrapper">
         <Col span={24} className="price-list-block">
           <div className="price-list__header">
@@ -33,7 +43,7 @@ const PriceListRoot = () => {
                 <h1>
                   900 рублей
                 </h1>
-                <Button>
+                <Button onClick={openOrderModal}>
                   Отправить заявку
                 </Button>
               </div>

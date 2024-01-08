@@ -1,5 +1,5 @@
 import { Row, Button, Col } from "antd";
-import React from "react";
+import React, { useState } from "react";
 
 import image1 from '../../../assets/2.png';
 import image2 from '../../../assets/3.png';
@@ -8,9 +8,18 @@ import image4 from '../../../assets/5.png';
 
 import './whatCanDeliver.css';
 
+import OrderModal from "../../../components/OrderModal/OrderModal";
+
 const WhatCanDeliverRoot = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openOrderModal = () => {
+    setIsOpen(true);
+  }
+
   return (
     <Row className="what-can-deliver-root">
+      <OrderModal isOpen={isOpen} setIsOpen={setIsOpen} />
       <Col span={24} className="what-can-deliver-wrapper">
         <Col span={24} className="what-can-deliver-block">
           <div className="what-can-deliver-root__header">
@@ -24,9 +33,16 @@ const WhatCanDeliverRoot = () => {
                   <div className="deliver-card__image">
                     <img className="deliver-card__image__img" src={image1} alt="img1" />
                   </div>
-                  <div className="deliver-card__description">
-                    <span className="deliver-desc__header">Аварийные авто</span>
-                    <span className="deliver-desc__content">Авто и техника со страховых аукционов США и Кореи по выгодным ценам</span>
+                  <div className="deliver-card__desc-block">
+                    <div className="deliver-card__description">
+                      <span className="deliver-desc__header">Аварийные авто</span>
+                      <span className="deliver-desc__content">Авто и техника со страховых аукционов США и Кореи по выгодным ценам</span>
+                    </div>
+                    <div className="deliver-card__order-btn">
+                      <Button onClick={openOrderModal}>
+                        Заказать
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -35,9 +51,16 @@ const WhatCanDeliverRoot = () => {
                   <div className="deliver-card__image">
                     <img className="deliver-card__image__img" src={image4} alt="img1" />
                   </div>
-                  <div className="deliver-card__description">
-                    <span className="deliver-desc__header">Автомобили</span>
-                    <span className="deliver-desc__content">Новые и б/у автомобили всех марок и моделей по всей территории США и Южной Кореи</span>
+                  <div className="deliver-card__desc-block">
+                    <div className="deliver-card__description">
+                      <span className="deliver-desc__header">Автомобили</span>
+                      <span className="deliver-desc__content">Новые и б/у автомобили всех марок и моделей по всей территории США и Южной Кореи</span>
+                    </div>
+                    <div className="deliver-card__order-btn">
+                      <Button onClick={openOrderModal}>
+                        Заказать
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -46,9 +69,16 @@ const WhatCanDeliverRoot = () => {
                   <div className="deliver-card__image">
                     <img className="deliver-card__image__img" src={image2} alt="img1" />
                   </div>
-                  <div className="deliver-card__description">
-                    <span className="deliver-desc__header">Электромобили</span>
-                    <span className="deliver-desc__content">Электрокары из США от ведущих производителей мира: новые, аварийные, б/у</span>
+                  <div className="deliver-card__desc-block">
+                    <div className="deliver-card__description">
+                      <span className="deliver-desc__header">Электромобили</span>
+                      <span className="deliver-desc__content">Электрокары из США от ведущих производителей мира: новые, аварийные, б/у</span>
+                    </div>
+                    <div className="deliver-card__order-btn">
+                      <Button onClick={openOrderModal}>
+                        Заказать
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -57,9 +87,16 @@ const WhatCanDeliverRoot = () => {
                   <div className="deliver-card__image">
                     <img className="deliver-card__image__img" src={image3} alt="img1" />
                   </div>
-                  <div className="deliver-card__description">
-                    <span className="deliver-desc__header">Мотоциклы</span>
-                    <span className="deliver-desc__content">Мотоциклы от самых популярных моделей до легендарных раритетных</span>
+                  <div className="deliver-card__desc-block">
+                    <div className="deliver-card__description">
+                      <span className="deliver-desc__header">Мотоциклы</span>
+                      <span className="deliver-desc__content">Мотоциклы от самых популярных моделей до легендарных раритетных</span>
+                    </div>
+                    <div className="deliver-card__order-btn">
+                      <Button onClick={openOrderModal}>
+                        Заказать
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>

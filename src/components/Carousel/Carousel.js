@@ -56,7 +56,7 @@ const Carousel = ({ children, title, maxLength }) => {
           </div>
           <div
             onClick={next}
-            className={`right_arrow ${currentIndex === 3 ? 'disableArrow' : ''}`}
+            className={`right_arrow ${currentIndex === maxLength - 2 ? 'disableArrow' : ''}`}
           >
             <span><ArrowRight /></span>
           </div>

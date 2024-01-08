@@ -9,7 +9,10 @@ import image from '../../../../assets/image55.png';
 import image2 from '../../../../assets/image 2.png';
 
 import './mainView.css';
-import { createOrderRequest } from "../../../../lib/api/orderApi";
+
+import OrderModal from "../../../../components/OrderModal/OrderModal";
+
+import { useState } from "react";
 
 const extra_offers = [
   {
@@ -39,16 +42,14 @@ const extra_offers = [
 ]
 
 const MainView = () => {
-  const createOrder = async () => {
-    const config = {
-      name: 'Nikita',
-      number: '+375203939399'
-    }
+  const [isOpen, setIsOpen] = useState(false);
 
-    await createOrderRequest(config);
+  const openOrderModal = () => {
+    setIsOpen(true);
   }
   return (
     <Row className="main-view">
+      <OrderModal isOpen={isOpen} setIsOpen={setIsOpen} />
       <Col span={24} className="main-view-wrapper">
         <Col span={24} className="main-view-block">
           <Col span={24} className="main-view-content">
@@ -58,7 +59,7 @@ const MainView = () => {
 
                 <Col className="offer-description-2">Подбор, покупка и доставка авто из США, Южной Кореи и Китая с реальной денежной выгодой до 40% от рынка РБ</Col>
 
-                <Button onClick={createOrder} className="offer-button">
+                <Button onClick={openOrderModal} className="offer-button">
                   Подобрать
                 </Button>
               </Col>
