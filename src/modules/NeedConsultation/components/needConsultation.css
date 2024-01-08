@@ -90,6 +90,14 @@ line-height: 16px;
   justify-content: center;
   margin-top: 32px;
   border-radius: 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.consult-wrapper__submit:hover {
+  color: #122E74;
+  background-color: #FFFFFFE5;
 }
 
 .consult-wrapper__approve span {

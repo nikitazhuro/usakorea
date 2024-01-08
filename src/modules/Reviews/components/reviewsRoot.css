@@ -16,6 +16,32 @@
   width: 100%;
 }
 
+.reviews-block .right_arrow:not(.disableArrow),
+.reviews-block .left_arrow:not(.disableArrow) {
+  border: 1px solid #DCDCDC;
+  background-color: #F8F8F8;
+}
+
+.reviews-block .right_arrow.disableArrow,
+.reviews-block .left_arrow.disableArrow {
+  border: 1px solid #DCDCDC;
+  background-color: rgba(0, 0, 0, 0.03)!important;
+}
+.reviews-block .right_arrow.disableArrow svg,
+.reviews-block .left_arrow.disableArrow svg{
+  color: #DCDCDC;
+}
+
+.reviews-block .right_arrow svg,
+.reviews-block .left_arrow svg{
+  color: #DCDCDC;
+}
+
+.reviews-block .right_arrow:not(.disableArrow):hover,
+.reviews-block .left_arrow:not(.disableArrow):hover{
+  background-color: white;
+}
+
 .reviews-root .carousel_header__title {
   color: #34343D;
   font-size: 48px;

@@ -49,12 +49,13 @@
 .left_arrow {
   left: 0;
   cursor: pointer;
-  transition: ease-out 0.4s;
+  transition: ease-out 0.3s;
 }
 .right_arrow {
   right: 0;
   cursor: pointer;
-  transition: ease-in 0.4s;
+  transition: ease-in 0.3s;
+  border-left: none!important;
 }
 
 .disableArrow {

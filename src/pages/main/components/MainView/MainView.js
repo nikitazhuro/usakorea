@@ -59,9 +59,9 @@ const MainView = () => {
 
                 <Col className="offer-description-2">Подбор, покупка и доставка авто из США, Южной Кореи и Китая с реальной денежной выгодой до 40% от рынка РБ</Col>
 
-                <Button onClick={openOrderModal} className="offer-button">
+                <button onClick={openOrderModal} className="offer-button">
                   Подобрать
-                </Button>
+                </button>
               </Col>
             </Col>
 

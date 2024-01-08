@@ -19,6 +19,20 @@
   padding: 0 calc(60px - 0.5%);
 }
 
+.delivered-cars-block .right_arrow:not(.disableArrow):hover,
+.delivered-cars-block .left_arrow:not(.disableArrow):hover {
+  background-color: white;
+}
+
+.delivered-cars-block .right_arrow , .delivered-cars-block .left_arrow {
+  color: white;
+}
+
+.delivered-cars-block .right_arrow:not(.disableArrow):hover svg,
+.delivered-cars-block .left_arrow:not(.disableArrow):hover svg{
+  color: #122E74;
+}
+
 .carousel_header__title {
   color: #FFF;
   font-size: 48px;

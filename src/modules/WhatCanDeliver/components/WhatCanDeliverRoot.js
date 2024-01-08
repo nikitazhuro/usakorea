@@ -39,9 +39,9 @@ const WhatCanDeliverRoot = () => {
                       <span className="deliver-desc__content">Авто и техника со страховых аукционов США и Кореи по выгодным ценам</span>
                     </div>
                     <div className="deliver-card__order-btn">
-                      <Button onClick={openOrderModal}>
+                      <button onClick={openOrderModal}>
                         Заказать
-                      </Button>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -57,9 +57,9 @@ const WhatCanDeliverRoot = () => {
                       <span className="deliver-desc__content">Новые и б/у автомобили всех марок и моделей по всей территории США и Южной Кореи</span>
                     </div>
                     <div className="deliver-card__order-btn">
-                      <Button onClick={openOrderModal}>
+                      <button onClick={openOrderModal}>
                         Заказать
-                      </Button>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -75,9 +75,9 @@ const WhatCanDeliverRoot = () => {
                       <span className="deliver-desc__content">Электрокары из США от ведущих производителей мира: новые, аварийные, б/у</span>
                     </div>
                     <div className="deliver-card__order-btn">
-                      <Button onClick={openOrderModal}>
+                      <button onClick={openOrderModal}>
                         Заказать
-                      </Button>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -93,9 +93,9 @@ const WhatCanDeliverRoot = () => {
                       <span className="deliver-desc__content">Мотоциклы от самых популярных моделей до легендарных раритетных</span>
                     </div>
                     <div className="deliver-card__order-btn">
-                      <Button onClick={openOrderModal}>
+                      <button onClick={openOrderModal}>
                         Заказать
-                      </Button>
+                      </button>
                     </div>
                   </div>
                 </div>

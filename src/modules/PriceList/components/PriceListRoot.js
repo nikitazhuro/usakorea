@@ -43,9 +43,9 @@ const PriceListRoot = () => {
                 <h1>
                   900 рублей
                 </h1>
-                <Button onClick={openOrderModal}>
+                <button onClick={openOrderModal}>
                   Отправить заявку
-                </Button>
+                </button>
               </div>
             </div>
           </div>

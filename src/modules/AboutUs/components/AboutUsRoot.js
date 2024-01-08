@@ -27,9 +27,9 @@ const AboutUsRoot = () => {
             <div className="about-us-content__desc2">
               Только слаженная работа и ответственное отношение к делу позволяет получить положительные результаты.
             </div>
-            <Button className="about-us-content__submit" onClick={openOrderModal}>
+            <button className="about-us-content__submit" onClick={openOrderModal}>
               Подобрать авто
-            </Button>
+            </button>
           </Col>
           <Col span={12} className="about-us-info">
             <Col className="about-us-info__image">

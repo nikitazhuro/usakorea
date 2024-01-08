@@ -33,9 +33,9 @@ const NeedConsultationRoot = () => {
               </label>
             </div>
 
-            <Button className="consult-wrapper__submit">
+            <button className="consult-wrapper__submit">
               Отправить заявку
-            </Button>
+            </button>
           </div>
         </Col>
       </Col>

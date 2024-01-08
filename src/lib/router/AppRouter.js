@@ -4,11 +4,9 @@ import { publicRoutes } from ".";
 
 const AppRouter = () => {
   return (
-    <Suspense fallback={<div>Loading</div>}>
-      <Routes>
-        {publicRoutes.map((route) => <Route path={route.path} element={<route.element />} />)}
-      </Routes>
-    </Suspense>
+    <Routes>
+      {publicRoutes.map((route) => <Route path={route.path} element={<route.element />} />)}
+    </Routes>
   )
 }
 
