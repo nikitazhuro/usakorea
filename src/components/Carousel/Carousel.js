@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 import { ReactComponent as ArrowLeft } from '../../assets/arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
@@ -10,8 +10,16 @@ const Carousel = ({ children, title, maxLength }) => {
 
   const [defaultTransform, setDefaultTransForm] = useState(50);
 
+  const ind = useMemo(() => {
+    if (defaultTransform === 50) {
+      return maxLength - 2;
+    } else if (defaultTransform === 100) {
+      return maxLength - 1;
+    }
+  }, [defaultTransform, maxLength]);
+
   const next = () => {
-    if (currentIndex < maxLength - 2) {
+    if (currentIndex < ind) {
       setCurrentIndex((prevState) => prevState + 1);
     }
   };
@@ -56,7 +64,7 @@ const Carousel = ({ children, title, maxLength }) => {
           </div>
           <div
             onClick={next}
-            className={`right_arrow ${currentIndex === maxLength - 2 ? 'disableArrow' : ''}`}
+            className={`right_arrow ${currentIndex === ind ? 'disableArrow' : ''}`}
           >
             <span><ArrowRight /></span>
           </div>

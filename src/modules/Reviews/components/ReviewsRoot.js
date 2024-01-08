@@ -12,6 +12,7 @@ const ReviewsRoot = () => {
 
   const getReviews = async () => {
     const data = await getLastFiveReviewsRequest();
+    console.log(data);
     setData(data);
   }
   useEffect(() => {

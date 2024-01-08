@@ -49,7 +49,7 @@
 }
 
 .consult-wrapper__input {
-  width: 100%;
+  width: calc(100% - 48px);
   height: 64px;
   background-color: rgba(217, 217, 217, 0.10);
   color: rgba(255, 255, 255, 0.40);

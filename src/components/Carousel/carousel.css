@@ -97,6 +97,7 @@
 @media screen and (max-width: 992px) {
   .carousel_item{
     width: 100%;
+    margin: 0;
   }
   .left_arrow, .right_arrow {
     height: 52px;

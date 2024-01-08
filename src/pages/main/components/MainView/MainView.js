@@ -5,8 +5,8 @@ import { ReactComponent as CarIcon } from '../../../../assets/car.svg';
 import { ReactComponent as CalcIcon } from '../../../../assets/calc.svg';
 import { ReactComponent as CertIcon } from '../../../../assets/cert.svg';
 
-import image from '../../../../assets/image55.png';
-import image2 from '../../../../assets/image 2.png';
+import main from '../../../../assets/main.png';
+import wheel from '../../../../assets/wheel.png';
 
 import './mainView.css';
 
@@ -67,9 +67,9 @@ const MainView = () => {
 
             <Col className="main-offer__right">
               <Col span={24} className="car-block--mobile">
-                <img src={image} alt='car' />
+                <img src={main} alt='car' />
               </Col>
-              <img className="wheel" src={image2} alt='car' />
+              <img className="wheel" src={wheel} alt='car' />
             </Col>
           </Col>
 
@@ -94,7 +94,7 @@ const MainView = () => {
           </Col>
 
           <Col span={24} className="car-block">
-            <img src={image} alt='car' />
+            <img src={main} alt='car' />
           </Col>
         </Col>
       </Col>

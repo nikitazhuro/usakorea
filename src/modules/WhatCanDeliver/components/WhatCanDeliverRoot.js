@@ -1,10 +1,10 @@
 import { Row, Button, Col } from "antd";
 import React, { useState } from "react";
 
-import image1 from '../../../assets/2.png';
-import image2 from '../../../assets/3.png';
-import image3 from '../../../assets/4.png';
-import image4 from '../../../assets/5.png';
+import what_can_deliver_1 from '../../../assets/what_can_deliver_1.png';
+import what_can_deliver_2 from '../../../assets/what_can_deliver_2.png';
+import what_can_deliver_3 from '../../../assets/what_can_deliver_3.png';
+import what_can_deliver_4 from '../../../assets/what_can_deliver_4.png';
 
 import './whatCanDeliver.css';
 
@@ -31,7 +31,7 @@ const WhatCanDeliverRoot = () => {
               <div className="deliver-card deliver-card--first">
                 <div className="deliver-card__block">
                   <div className="deliver-card__image">
-                    <img className="deliver-card__image__img" src={image1} alt="img1" />
+                    <img className="deliver-card__image__img" src={what_can_deliver_1} alt="img1" />
                   </div>
                   <div className="deliver-card__desc-block">
                     <div className="deliver-card__description">
@@ -49,7 +49,7 @@ const WhatCanDeliverRoot = () => {
               <div className="deliver-card deliver-card--second">
                 <div className="deliver-card__block">
                   <div className="deliver-card__image">
-                    <img className="deliver-card__image__img" src={image4} alt="img1" />
+                    <img className="deliver-card__image__img" src={what_can_deliver_2} alt="img1" />
                   </div>
                   <div className="deliver-card__desc-block">
                     <div className="deliver-card__description">
@@ -67,7 +67,7 @@ const WhatCanDeliverRoot = () => {
               <div className="deliver-card deliver-card--third">
                 <div className="deliver-card__block">
                   <div className="deliver-card__image">
-                    <img className="deliver-card__image__img" src={image2} alt="img1" />
+                    <img className="deliver-card__image__img" src={what_can_deliver_3} alt="img1" />
                   </div>
                   <div className="deliver-card__desc-block">
                     <div className="deliver-card__description">
@@ -85,7 +85,7 @@ const WhatCanDeliverRoot = () => {
               <div className="deliver-card deliver-card--forth">
                 <div className="deliver-card__block">
                   <div className="deliver-card__image">
-                    <img className="deliver-card__image__img" src={image3} alt="img1" />
+                    <img className="deliver-card__image__img" src={what_can_deliver_4} alt="img1" />
                   </div>
                   <div className="deliver-card__desc-block">
                     <div className="deliver-card__description">
