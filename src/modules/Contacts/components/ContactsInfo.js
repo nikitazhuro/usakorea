@@ -21,7 +21,7 @@ const ContactsInfo = () => {
           </div>
 
         </div>
-        <div className="contacts-info__item">
+        <div className="contacts-info__item contacts-info__item--last">
           <h3>Email</h3>
           <div>usakoreaby@yandex.ru</div>
         </div>

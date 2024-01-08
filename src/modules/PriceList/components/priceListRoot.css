@@ -50,7 +50,6 @@
 .condition-item-block {
   display: flex;
   gap: 20px;
-  height: 22px;
 }
 
 .condition-item-block span {
@@ -90,6 +89,7 @@
   color: #122E74;
   font-size: 20px;
   font-weight: 400;
+  border-radius: 0;
 }
 
 @media screen and (max-width: 1700px) {
@@ -136,5 +136,51 @@
   }
   .price button {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .price-list-root {
+    padding: 100px 60px 0;
+  }
+  .price-list__header h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .condition-item {
+    padding: 18px 0;
+  }
+  .price h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .price button {
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .price-list-root {
+    padding: 60px 16px 0;
+  }
+  .price-list-block {
+    padding: 24px;
+  }
+  .price-list__header h1 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .condition-item-block span {
+    font-size: 13px;
+  }
+  .condition-item-block svg {
+    width: 18px;
+    height: 18px;
+  }
+  .price h1 {
+    margin-bottom: 40px;
+  }
+  .price button {
+    height: 54px;
   }
 }

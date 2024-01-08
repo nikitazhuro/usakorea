@@ -40,3 +40,19 @@
     max-width: 200px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .partners-root-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .partners-root-block__item {
+    border-right: 1px solid rgba(220, 220, 220, 0.70);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partners-root {
+    padding: 0 16px;
+  }
+}

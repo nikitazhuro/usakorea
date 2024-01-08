@@ -19,7 +19,7 @@ const WhatCanDeliverRoot = () => {
 
           <div className="what-can-deliver-root__content">
             <div className="deliver-block">
-              <div className="deliver-card">
+              <div className="deliver-card deliver-card--first">
                 <div className="deliver-card__block">
                   <div className="deliver-card__image">
                     <img className="deliver-card__image__img" src={image1} alt="img1" />
@@ -30,7 +30,7 @@ const WhatCanDeliverRoot = () => {
                   </div>
                 </div>
               </div>
-              <div className="deliver-card">
+              <div className="deliver-card deliver-card--second">
                 <div className="deliver-card__block">
                   <div className="deliver-card__image">
                     <img className="deliver-card__image__img" src={image4} alt="img1" />
@@ -41,7 +41,7 @@ const WhatCanDeliverRoot = () => {
                   </div>
                 </div>
               </div>
-              <div className="deliver-card">
+              <div className="deliver-card deliver-card--third">
                 <div className="deliver-card__block">
                   <div className="deliver-card__image">
                     <img className="deliver-card__image__img" src={image2} alt="img1" />
@@ -52,7 +52,7 @@ const WhatCanDeliverRoot = () => {
                   </div>
                 </div>
               </div>
-              <div className="deliver-card">
+              <div className="deliver-card deliver-card--forth">
                 <div className="deliver-card__block">
                   <div className="deliver-card__image">
                     <img className="deliver-card__image__img" src={image3} alt="img1" />

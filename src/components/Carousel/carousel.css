@@ -98,4 +98,15 @@
   .carousel_item{
     width: 100%;
   }
+  .left_arrow, .right_arrow {
+    height: 52px;
+    width: 71px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel_header__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }

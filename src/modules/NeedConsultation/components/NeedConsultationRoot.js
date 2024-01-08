@@ -18,8 +18,8 @@ const NeedConsultationRoot = () => {
             <div className="consult-wrapper__desc">Оставьте заявку и мы оперативно вам перезвоним и ответим на все ваши вопросы!</div>
 
             <div className="consult-wrapper__inputs">
-              <input type="text" className="consult-wrapper__input" />
-              <input type="text" className="consult-wrapper__input" />
+              <input type="text" className="consult-wrapper__input" placeholder='Имя*' />
+              <input type="text" className="consult-wrapper__input" placeholder='Телефон*' />
             </div>
 
             <div className="consult-wrapper__approve">

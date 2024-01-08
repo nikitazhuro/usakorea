@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.menu-burger {
+  display: none;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -15,7 +19,7 @@
 }
 
 .menu-list {
-  margin-left: 60px;
+  margin: 0 60px;
   width: 578px;
   display: flex;
   justify-content: space-between;
@@ -45,4 +49,34 @@
 
 .menu-actions__item:last-child {
   background-color: #122E74;
+}
+
+@media screen and (max-width: 992px) {
+  .menu-wrapper {
+    height: 56px;
+  }
+  .menu-actions__item {
+    width: 56px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-list {
+    display: none;
+  }
+  .menu-burger {
+    width: 56px;
+    height: 56px;
+    display: block;
+  }
+  .menu-burger-button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-right: 1px solid #DCDCDC;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 
 import { ReactComponent as MailIcon } from '../../../assets/Mail.svg';
 import { ReactComponent as TelegramIcon } from '../../../assets/Paper_Plane.svg';
@@ -25,6 +25,15 @@ const MenuRoot = () => {
           </Col>
           <Col className="menu-item">
             Контакти
+          </Col>
+        </Col>
+        <Col className="menu-burger">
+          <Col className="menu-burger-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14" fill="none">
+              <path d="M0 1H24" stroke="black" />
+              <path d="M0 7H24" stroke="black" />
+              <path d="M0 13H24" stroke="black" />
+            </svg>
           </Col>
         </Col>
         <Col className="menu-actions">

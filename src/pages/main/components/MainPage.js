@@ -27,8 +27,8 @@ const MainPage = () => {
       <DeliveryReasonsRoot />
       <PriceListRoot />
       <ReviewsRoot />
-      {/* <ContactsRoot />
-      <FooterRoot /> */}
+      <ContactsRoot />
+      <FooterRoot />
     </div>
   )
 }

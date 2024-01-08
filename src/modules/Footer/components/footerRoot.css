@@ -1,6 +1,5 @@
 .footer-root {
   width: 100%;
-  height: 462px;
   background-color: #122E74;
 }
 
@@ -15,19 +14,19 @@
 }
 
 .footer-content {
-  height: 390px;
-  padding: 60px 0;
-  margin: 0 60px;
-  max-width: 1800px;
+  padding: 60px;
+  max-width: 1920px;
+  width: 100%;
   display: flex;
   text-align: start;
 }
 
+
 .footer-add-info {
   height: 70px;
-  padding: 24px 0;
-  margin: 0 60px;
-  max-width: 1800px;
+  padding: 24px 60px;
+  max-width: 1920px;
+  width: 100%;
   color: #FFF;
   font-size: 16px;
   text-align: start;
@@ -45,6 +44,9 @@
   background-color: white;
 }
 
+.footer-logo .footer-item__telegram {
+  display: none;
+}
 .footer-item-block:first-child {
   margin-bottom: 36px;
 }
@@ -57,9 +59,13 @@
 }
 
 .footer-item__content {
-  width: 340px;
+  max-width: 340px;
   color: #FFF;
   font-size: 20px;
+}
+
+.requisites {
+  padding-right: 30px;
 }
 
 .footer-item:last-child {
@@ -75,4 +81,94 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-item__content {
+    font-size: 18px;
+  }
+  .footer-item__telegram {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-item__content {
+    font-size: 14px;
+  }
+  .footer-item__logo {
+    width: 120px;
+    height: 48px;
+  }
+  .footer-item__telegram {
+    width: 28px;
+    height: 28px;
+  }
+  .footer-item__title {
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+
+  .footer-item__telegram svg {
+    width: 24px;
+    height: 24px;
+  }
+  .footer-item-block:first-child {
+    margin-bottom: 18px;
+  }
+  .footer-add-info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-item__title {
+    margin-top: 40px;
+  }
+  .footer-item-block:first-child {
+    margin-bottom: 0;
+  }
+  .footer-item__telegram {
+    display: none;
+    width: 48px;
+    height: 48px;
+  }
+  .footer-content__item {
+    width: 100%;
+  }
+  .footer-logo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-logo .footer-item__telegram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-item__telegram svg {
+    width: 29px;
+    height: 29px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-content {
+    padding: 60px 16px;
+  }
+  .footer-add-info {
+    padding: 24px 16px;
+  }
+  .footer-item__title {
+    font-size: 18px;
+  }
+  .footer-item__content {
+    font-size: 15px;
+  }
+  .footer-add-info {
+    font-size: 15px;
+  }
 }

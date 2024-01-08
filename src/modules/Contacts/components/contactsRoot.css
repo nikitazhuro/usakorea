@@ -1,7 +1,6 @@
 .contacts-root {
-  padding: 160px 0;
+  padding: 160px 60px;
   width: 100%;
-  height: 958px;
   text-align: start;
   background-color: #F8F8F8;
 }
@@ -14,8 +13,8 @@
 }
 
 .contacts-block {
-  margin: 0 60px;
   max-width: 1800px;
+  width: 100%;
 }
 .contacts-block h1 {
   color: #34343D;
@@ -73,8 +72,104 @@
 
 .map {
   width: 100%;
+  height: 530px;
+  max-width: 900px;
+  /* min-width: 660px; */
 }
 .yandex-map {
   height: 100%;
-  width: 900px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1680px) {
+  .contacts-info__item div {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contacts-content {
+    flex-direction: column;
+  }
+  .contacts-info {
+    width: 100%;
+    max-width: none;
+    height: 412px;
+  }
+  .contacts-info__row {
+    height: 206px;
+  }
+  .map {
+    max-width: 1440px;
+    height: 406px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contacts-root {
+    padding: 100px 60px;
+  }
+  .contacts-block h1 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+  .contacts-info__item div {
+    font-size: 16px;
+  }
+  .contacts-info__item h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts-root {
+    padding: 100px 60px;
+  }
+  .contacts-block h1 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+  .contacts-info__item div {
+    font-size: 16px;
+  }
+  .contacts-info__item h3 {
+    font-size: 20px;
+  }
+  .contacts-info__row {
+    height: auto;
+    flex-direction: column;
+    border-bottom: none!important;
+  }
+  .contacts-info__item {
+    padding: 24px;
+    height: 145px;
+    border-right: none!important;
+    width: auto;
+  }
+  .contacts-info {
+    height: auto;
+  }
+  .contacts-info__item:not(.contacts-info__item--last) {
+    border-bottom: 1px solid rgba(220, 220, 220, 0.70);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contacts-root {
+    padding: 60px 16px;
+  }
+
+  .contacts-block h1 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+  .contacts-info__item h3 {
+    font-size: 18px;
+  }
+  .contacts-info__item div {
+    font-size: 15px;
+  }
 }

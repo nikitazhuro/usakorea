@@ -31,7 +31,7 @@ const extra_offers = [
     icon: <CalcIcon />,
   },
   {
-    title: 'Без посредников',
+    title: 'Помощь на таможне',
     description: 'Вы получите полную информацию по таможне либо пройдете ее с нашим специалистом',
     extraClass: 'offer-item--fifth',
     icon: <CertIcon />,
@@ -65,6 +65,9 @@ const MainView = () => {
             </Col>
 
             <Col className="main-offer__right">
+              <Col span={24} className="car-block--mobile">
+                <img src={image} alt='car' />
+              </Col>
               <img className="wheel" src={image2} alt='car' />
             </Col>
           </Col>
@@ -75,7 +78,7 @@ const MainView = () => {
 
               {extra_offers.map((elem) => (
                 <Col className={`offer-item ${elem.extraClass}`}>
-                  <Col>
+                  <Col className="offer-item__wrapper">
                     <Col className="offer-item__title">
                       <span>{elem.title}</span>
                       {elem.icon}
