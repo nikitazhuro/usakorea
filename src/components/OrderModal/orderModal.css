@@ -106,3 +106,37 @@
 .error-checkbox .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: #E24242;
 }
+
+
+@media screen and (max-width: 600px) {
+  .order-modal {
+    height: auto;
+  }
+  .order-modal .ant-modal-content {
+    padding: 24px;
+  }
+  .order-modal-content__submit {
+    height: 52px;
+  }
+  .order-modal-content__submit button {
+    font-size: 15px;
+  }
+  .order-modal-content__input {
+    height: 52px;
+    font-size: 15px;
+    padding: 0 20px;
+  }
+  .order-modal-content__input--last {
+    height: 56px;
+    padding: 16px 20px;
+    resize: none;
+  }
+  .order-modal-content__approve .custom-checkbox + label::before {
+    width: 24px;
+    height: 24px;
+  }
+  .order-modal-content__approve  {
+    font-size: 12px;
+    max-width: 340px;
+  }
+}

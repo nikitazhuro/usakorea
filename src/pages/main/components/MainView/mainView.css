@@ -374,6 +374,7 @@
   }
   .main-view {
     height: 550px;
+    padding-top: 52px;
   }
   .offer-item__description {
     line-height: 12px;
@@ -398,7 +399,7 @@
 
 @media screen and (max-width: 768px) {
   .main-view {
-    height: 850px;
+    height: auto;
   }
   .car-block--mobile {
     display: block;
@@ -415,7 +416,7 @@
   }
   .main-view-content {
     flex-direction: column;
-    height: 592px;
+    height: auto;
   }
   .wheel {
     width: 50%;
@@ -424,11 +425,11 @@
     position: relative;
   }
   .main-offer__left {
-    height: 292px;
-    max-width: 350px;
+    max-width: 400px;
     width: 100%;
-    padding-left: 16px;
+    padding-left: 60px;
     margin-left: 0;
+    margin-bottom: 32px;
   }
   .offer-description-1 {
     font-size: 32px;

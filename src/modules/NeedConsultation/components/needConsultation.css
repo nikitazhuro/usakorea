@@ -186,20 +186,12 @@
   .consult-wrapper__desc {
     font-size: 16px;
   }
-
-  .consult-wrapper__input {
-    height: 48px;
-  }
 }
 
 @media screen and (max-width: 992px) {
   .consult-wrapper__question {
     font-size: 32px;
     line-height: 32px;
-  }
-  .consult-wrapper__approve {
-    font-size: 11px;
-    line-height: 14px;
   }
   .need-consultation__content {
     padding: 0 50px;
@@ -233,6 +225,11 @@
     line-height: 24px;
     margin-bottom: 20px;
   }
+  .consult-wrapper__input {
+    height: 52px;
+    font-size: 15px;
+    padding: 0 20px;
+  }
   .consult-wrapper__desc {
     font-size: 15px;
     margin-bottom: 32px;
@@ -247,5 +244,7 @@
   }
   .consult-wrapper__approve {
     margin-top: 24px;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
