@@ -48,11 +48,20 @@
   width: 100%;  
 }
 
+.consult-wrapper__approve div {
+  color: rgba(255, 255, 255, 0.70);
+  line-height: 16px;
+}
+
+.consult-wrapper__approve span {
+  color: white;
+}
+
 .consult-wrapper__input {
   width: calc(100% - 48px);
   height: 64px;
   background-color: rgba(217, 217, 217, 0.10);
-  color: rgba(255, 255, 255, 0.40);
+  color: white;
   font-size: 20px;
   font-weight: 400;
   border: none;
@@ -60,8 +69,21 @@
   padding: 0 24px;
   outline: none;
 }
+
+.consult-wrapper__input--error {
+  border-bottom: 1px solid #E24242;
+}
+
 .consult-wrapper__input::placeholder {
   color: rgba(255, 255, 255, 0.40);
+}
+
+.consult-wrapper__input--error::placeholder {
+  color: #E24242;
+}
+
+.error-checkbox span, .error-checkbox div {
+  color: #E24242;
 }
 
 .consult-wrapper__input:first-child {
@@ -71,9 +93,9 @@
 .consult-wrapper__approve {
   margin-top: 40px;
   color: #FFF;
-font-size: 14px;
-font-weight: 400;
-line-height: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 
@@ -100,7 +122,7 @@ line-height: 16px;
   background-color: #FFFFFFE5;
 }
 
-.consult-wrapper__approve span {
+.consult-wrapper__approve div {
   max-width: 396px;
   width: 100%;
 }
@@ -129,6 +151,7 @@ line-height: 16px;
   background-position: center center;
   background-size: 50% 50%;
 }
+
 
 .custom-checkbox:checked + label::before {
   border-color: #c3c3c3;
