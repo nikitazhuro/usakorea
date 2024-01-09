@@ -79,8 +79,12 @@ const NeedConsultationRoot = () => {
                 placeholder='Телефон*'
                 value={state.number}
                 onChange={(e) => {
-                  setState((prev) => ({ ...prev, number: e.target.value }));
-                  setValidationFields((prev) => ({ ...prev, number: true }));
+                  const reg = /^\+?[0-9]*$/g;
+
+                  if (e.target.value.match(reg)) {
+                    setState((prev) => ({ ...prev, number: e.target.value }));
+                    setValidationFields((prev) => ({ ...prev, number: true }));
+                  }
                 }}
               />
             </div>

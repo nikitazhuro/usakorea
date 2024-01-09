@@ -27,11 +27,11 @@ const OrderModal = ({
       setError(true);
     }
     if (!state.name) {
-      setValidationFields((prev) => ({...prev, name: false }))
+      setValidationFields((prev) => ({ ...prev, name: false }))
     }
 
     if (!state.number) {
-      setValidationFields((prev) => ({...prev, number: false }))
+      setValidationFields((prev) => ({ ...prev, number: false }))
     }
 
     if (!state.name || !state.number || !checked) return;
@@ -86,8 +86,8 @@ const OrderModal = ({
             placeholder='Имя*'
             value={state.name}
             onChange={(e) => {
-              setState((prev) => ({...prev, name: e.target.value}));
-              setValidationFields((prev) => ({...prev, name: true }));
+              setState((prev) => ({ ...prev, name: e.target.value }));
+              setValidationFields((prev) => ({ ...prev, name: true }));
             }}
           />
           <input
@@ -96,8 +96,12 @@ const OrderModal = ({
             placeholder='Телефон*'
             value={state.number}
             onChange={(e) => {
-              setState((prev) => ({...prev, number: e.target.value}));
-              setValidationFields((prev) => ({...prev, number: true }));
+              const reg = /^\+?[0-9]*$/g;
+
+              if (e.target.value.match(reg)) {
+                setState((prev) => ({ ...prev, number: e.target.value }));
+                setValidationFields((prev) => ({ ...prev, number: true }));
+              }
             }}
           />
           <input
@@ -105,14 +109,14 @@ const OrderModal = ({
             className="order-modal-content__input"
             placeholder='Бюджет'
             value={state.budget}
-            onChange={(e) => setState((prev) => ({...prev, budget: e.target.value}))}
+            onChange={(e) => setState((prev) => ({ ...prev, budget: e.target.value }))}
           />
           <textarea
             type="text"
             className="order-modal-content__input order-modal-content__input--last"
             placeholder='Комментарий'
             value={state.userComment}
-            onChange={(e) => setState((prev) => ({...prev, userComment: e.target.value}))}
+            onChange={(e) => setState((prev) => ({ ...prev, userComment: e.target.value }))}
           />
           <div className={`order-modal-content__approve ${error ? 'error-checkbox' : ''}`}>
             <input
