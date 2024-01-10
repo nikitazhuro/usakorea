@@ -1,0 +1,35 @@
+.menu-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0px;
+  margin: 0px !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+}
+
+.menu-modal .ant-modal-content {
+  height: 100%;
+  border-radius: 0px;
+  padding: 64px;
+}
+
+.menu-modal-item {
+  width: max-content;
+}
+
+.menu-modal-item a {
+  color: #34343D;
+  text-transform: none;
+}
+.menu-modal-item a:hover {
+  color: #122E7499;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-modal .ant-modal-content {
+    padding: 64px 16px;
+  }
+}

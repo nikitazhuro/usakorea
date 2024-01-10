@@ -16,29 +16,33 @@ const howWeWorkList = [
 
 const HowWeWorkRoot = () => {
   return (
-    <Row className='how-we-work-root'>
-      <Col span={24} className='we-wort-block'>
-        <div className='we-work__left'>
-          <div className='we-work__left-inside'>
-            <h1>Как мы работаем?</h1>
-            <div>
-              <img src={image} alt='image' />
+    <>
+      <section id='howWeWork' />
+
+      <Row className='how-we-work-root'>
+        <Col span={24} className='we-wort-block'>
+          <div className='we-work__left'>
+            <div className='we-work__left-inside'>
+              <h1>Как мы работаем?</h1>
+              <div>
+                <img src={image} alt='image' />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className='we-work__right'>
-          <div className='we-work__right-inside'>
-            {howWeWorkList.map((item) => (
-              <div className='we-work__right-inside__item'>
-                <div className='we-work-item__count'>{item.count}</div>
-                <div className='we-work-item__title'>{item.title}</div>
-              </div>
-            ))}
+          <div className='we-work__right'>
+            <div className='we-work__right-inside'>
+              {howWeWorkList.map((item) => (
+                <div className='we-work__right-inside__item'>
+                  <div className='we-work-item__count'>{item.count}</div>
+                  <div className='we-work-item__title'>{item.title}</div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </Col>
-    </Row>
+        </Col>
+      </Row>
+    </>
   )
 }
 

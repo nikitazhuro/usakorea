@@ -34,6 +34,13 @@
 .menu-item {
   cursor: pointer;
 }
+.menu-item a {
+  color: #34343D;
+  text-transform: none;
+}
+.menu-item a:hover {
+  color: #122E7499;
+}
 
 .menu-actions {
   display: flex;
