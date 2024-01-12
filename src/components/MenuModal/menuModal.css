@@ -1,6 +1,6 @@
 .menu-modal {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 56px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -8,12 +8,21 @@
   margin: 0px !important;
   width: 100vw !important;
   max-width: 100vw !important;
+  background-color: white;
+  z-index: 100;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.3s all ease;
+}
+.menu-modal--active {
+  height: 100%;
 }
 
-.menu-modal .ant-modal-content {
-  height: 100%;
-  border-radius: 0px;
+.menu-modal-content {
   padding: 64px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-modal-item {
@@ -23,13 +32,14 @@
 .menu-modal-item a {
   color: #34343D;
   text-transform: none;
+  font-size: 15px;
 }
 .menu-modal-item a:hover {
   color: #122E7499;
 }
 
 @media screen and (max-width: 600px) {
-  .menu-modal .ant-modal-content {
-    padding: 64px 16px;
+  .menu-modal-content {
+    padding: 40px 16px !important;
   }
 }

@@ -124,7 +124,7 @@
 
 @media screen and (max-width: 768px) {
   .contacts-root {
-    padding: 100px 60px;
+    padding: 80px 60px;
   }
   .contacts-block h1 {
     font-size: 32px;

@@ -225,7 +225,7 @@
 
 @media screen and (max-width: 768px) {
   .what-can-deliver-root {
-    padding: 60px;
+    padding: 80px 60px;
   }
   .what-can-deliver-root__header {
     margin-bottom: 32px;

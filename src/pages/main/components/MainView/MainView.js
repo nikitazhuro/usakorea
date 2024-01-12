@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 
 import { ReactComponent as MoneyIcon } from '../../../../assets/money.svg';
-import { ReactComponent as CarIcon } from '../../../../assets/car.svg';
+import { ReactComponent as CarIcon } from '../../../../assets/car2.svg';
 import { ReactComponent as CalcIcon } from '../../../../assets/calc.svg';
 import { ReactComponent as CertIcon } from '../../../../assets/cert.svg';
 

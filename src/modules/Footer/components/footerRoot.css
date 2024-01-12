@@ -81,6 +81,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.footer-item__telegram a {
+  color: white;
+}
+
+
+.footer-item__telegram:hover {
+  background-color: #FFF;
+}
+
+.footer-item__telegram:hover a{
+  color: #122E74 !important;
 }
 
 @media screen and (max-width: 1200px) {

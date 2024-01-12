@@ -147,10 +147,16 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .delivery-reasons-root {
+    padding-top: 80px !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .delivery-reasons-root {
     padding: 0 16px;
-    padding-top: 60px;
+    padding-top: 60px !important;
   }
   .delivery-reasons__title {
     margin-bottom: 32px;

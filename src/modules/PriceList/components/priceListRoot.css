@@ -167,6 +167,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .price-list-root {
+    padding-top: 80px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .price-list-root {
     padding: 60px 16px 0;

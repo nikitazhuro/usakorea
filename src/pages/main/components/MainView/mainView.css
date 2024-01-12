@@ -130,7 +130,7 @@
 .offer-item__title {
   font-size: 24px;
   font-weight: 600;
-  line-height: 33px;
+  line-height: 26px;
   color: #122E74;
   display: flex;
   justify-content: space-between;
@@ -182,6 +182,7 @@
   }
   .offer-item__title {
     font-size: 22px;
+    line-height: 24px;
   }
   .offer-item__description {
     font-size: 14px;
@@ -198,6 +199,10 @@
 @media screen and (max-width: 1600px) {
   .car-block {
     bottom: 200px;
+  }
+
+  .offer-item__title {
+    line-height: 22px;
   }
 
   .main-offer__left {
@@ -283,6 +288,9 @@
   .main-offer__left {
     margin-top: 40px;
   }
+  .offer-item__title {
+    line-height: 20px
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -304,6 +312,7 @@
   }
   .offer-item__title {
     font-size: 18px;
+    line-height: 16px
   }
 
   .main-offer__left {
@@ -329,6 +338,7 @@
   }
   .offer-item__title {
     font-size: 16px;
+    line-height: 14px;
   }
   .offer-item {
     padding: 10px 15px;
@@ -383,9 +393,6 @@
     padding: 5px 8px;
     height: 130px;
   }
-  .offer-item__title {
-    line-height: 12px;
-  }
   .left-content {
     max-width: 400px;
   }
@@ -407,6 +414,13 @@
     right: 0;
     bottom: 0;
     z-index: 1;
+  }
+  .offer-item--third {
+    border-right: none;
+  }
+  .offer-item--second,
+  .offer-item--third {
+    border-bottom: 1px solid #DCDCDCB2;
   }
   .car-block--mobile img {
     width: 600px;

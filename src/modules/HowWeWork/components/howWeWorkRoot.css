@@ -135,8 +135,16 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .how-we-work-root {
+    margin-top: 80px;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .how-we-work-root {
+    margin-top: 60px;
+  }
   .we-work__left-inside h1 {
     margin-left: 16px;
     font-size: 24px;

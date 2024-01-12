@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import { Link } from "react-scroll";
 import { useState } from "react";
 
@@ -51,24 +51,35 @@ const MenuRoot = () => {
               </Link>
             </Col>
           </Col>
-          <Col className="menu-burger">
-            <Col className="menu-burger-button" onClick={() => setIsOpen(true)}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14" fill="none">
-                <path d="M0 1H24" stroke="black" />
-                <path d="M0 7H24" stroke="black" />
-                <path d="M0 13H24" stroke="black" />
-              </svg>
-            </Col>
+          <Col className="menu-burger" onClick={() => setIsOpen((prev) => {
+            if (!prev) {
+              document.body.style.overflow = 'hidden';
+            } else {
+              document.body.style = '';
+            }
+            return !prev;
+          })}>
+
+            <div className={`hamb__field ${isOpen ? 'active' : ''}`} id="hamb">
+              <span className="bar"></span> <span className="bar"></span>
+              <span className="bar"></span>
+            </div>
           </Col>
           <Col className="menu-actions">
             <Col className="menu-actions__item">
-              <TelegramIcon />
+              <Button className="menu-actions__item--phone" href="https://t.me/SaYaAuto" target="_blank">
+                <TelegramIcon />
+              </Button>
             </Col>
             <Col className="menu-actions__item">
-              <MailIcon />
+              <Button className="menu-actions__item--phone" href="mailto:usakorea@yandex.by">
+                <MailIcon />
+              </Button>
             </Col>
             <Col className="menu-actions__item">
-              <PhoneIcon />
+              <Button className="menu-actions__item--phone" href="tel:+375256172464" target="_blank">
+                <PhoneIcon />
+              </Button>
             </Col>
           </Col>
         </Col>
