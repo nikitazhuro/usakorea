@@ -160,6 +160,10 @@
   }
 
   .about-us-content {
+    padding: 60px;
+  }
+
+  .about-us-content {
     border: 1px solid rgba(220, 220, 220, 0.70);
   }
   .about-us-root {
@@ -181,10 +185,6 @@
   .about-us-content__title {
     font-size: 32px;
     line-height: 32px;
-  }
-  .about-us-content {
-    padding: 60px;
-    padding-bottom: 0;
   }
   .about-us-content__desc1 {
     font-size: 16px;
@@ -219,7 +219,6 @@
   }
   .about-us-content {
     padding: 24px;
-    padding-bottom: 0;
   }
   .about-us-info__content {
     padding: 24px;

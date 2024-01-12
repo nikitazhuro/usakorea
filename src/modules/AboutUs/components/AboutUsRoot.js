@@ -1,17 +1,26 @@
-import { Button, Col, Row } from "antd";
-import React, { useState } from 'react';
+import { Col, Row } from "antd";
+import React, { useEffect, useState } from 'react';
+
+import './aboutUsRoot.css';
 
 import image from '../../../assets/aboutus.png';
-import './aboutUsRoot.css';
+import image1 from '../../../assets/aboutus1.png';
 
 import OrderModal from "../../../components/OrderModal/OrderModal";
 
 const AboutUsRoot = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [imageState, setImageState] = useState(image);
 
   const openOrderModal = () => {
     setIsOpen(true);
   }
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setImageState(image1);
+    }
+  }, [])
 
   return (
     <>
@@ -35,7 +44,7 @@ const AboutUsRoot = () => {
             </Col>
             <Col span={12} className="about-us-info">
               <Col className="about-us-info__image">
-                <img src={image} alt="image" />
+                <img src={imageState} alt="image" />
               </Col>
               <Col className="about-us-info__content">
                 <h2>Наша задача</h2>
