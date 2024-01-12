@@ -8,12 +8,31 @@ import { useEffect, useState } from "react";
 import { getLastFiveReviewsRequest } from "../../../lib/api/reviewsApi";
 
 const ReviewsRoot = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([
+    {
+      comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+      createdAt: "2024-01-02T18:51:23.754Z",
+      date: "2024-01-20T00:00:00.000Z",
+      grade: 2,
+      id: 3,
+      name: "Negro",
+      updatedAt: "2024-01-02T18:52:05.541Z",
+    },
+    {
+      comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ",
+      createdAt: "2024-01-02T18:51:23.754Z",
+      date: "2024-01-20T00:00:00.000Z",
+      grade: 2,
+      id: 3,
+      name: "NikitaZ",
+      updatedAt: "2024-01-02T18:52:05.541Z",
+    }
+  ]);
 
   const getReviews = async () => {
-    const data = await getLastFiveReviewsRequest();
-    console.log(data);
-    setData(data);
+    // const data = await getLastFiveReviewsRequest();
+    // console.log(data);
+    // setData(data);
   }
   useEffect(() => {
     getReviews()
