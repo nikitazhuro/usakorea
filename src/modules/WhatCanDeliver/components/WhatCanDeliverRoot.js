@@ -39,7 +39,7 @@ const WhatCanDeliverRoot = () => {
                     <div className="deliver-card__desc-block">
                       <div className="deliver-card__description">
                         <span className="deliver-desc__header">Аварийные авто</span>
-                        <span className="deliver-desc__content">Авто и техника со страховых аукционов США и Кореи по выгодным ценам</span>
+                        <span className="deliver-desc__content">Авто и техника со страховых аукционов США и Кореи по выгодным ценам.</span>
                       </div>
                       <div className="deliver-card__order-btn">
                         <button onClick={openOrderModal}>
@@ -57,7 +57,7 @@ const WhatCanDeliverRoot = () => {
                     <div className="deliver-card__desc-block">
                       <div className="deliver-card__description">
                         <span className="deliver-desc__header">Автомобили</span>
-                        <span className="deliver-desc__content">Новые и б/у автомобили всех марок и моделей по всей территории США и Южной Кореи</span>
+                        <span className="deliver-desc__content">Новые и б/у автомобили всех марок и моделей по всей территории США, Кореи и Китая.</span>
                       </div>
                       <div className="deliver-card__order-btn">
                         <button onClick={openOrderModal}>
@@ -75,7 +75,7 @@ const WhatCanDeliverRoot = () => {
                     <div className="deliver-card__desc-block">
                       <div className="deliver-card__description">
                         <span className="deliver-desc__header">Электромобили</span>
-                        <span className="deliver-desc__content">Электрокары из США от ведущих производителей мира: новые, аварийные, б/у</span>
+                        <span className="deliver-desc__content">Электрокары из США и Китая от ведущих производителей мира: новые, аварийные, б/у.</span>
                       </div>
                       <div className="deliver-card__order-btn">
                         <button onClick={openOrderModal}>
@@ -93,7 +93,7 @@ const WhatCanDeliverRoot = () => {
                     <div className="deliver-card__desc-block">
                       <div className="deliver-card__description">
                         <span className="deliver-desc__header">Мотоциклы</span>
-                        <span className="deliver-desc__content">Мотоциклы от самых популярных моделей до легендарных раритетных</span>
+                        <span className="deliver-desc__content">Мотоциклы от самых популярных моделей до легендарных раритетных.</span>
                       </div>
                       <div className="deliver-card__order-btn">
                         <button onClick={openOrderModal}>

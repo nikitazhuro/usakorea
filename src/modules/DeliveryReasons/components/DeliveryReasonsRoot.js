@@ -13,7 +13,7 @@ const DeliveryReasonsRoot = () => {
       <Col span={24} className="delivery-reasons-wrapper">
         <Col span={24} className="delivery-reasons-block">
           <Col span={24} className="delivery-reasons__title">
-            <h1>Почему заказывают авто из США и Кореи?</h1>
+            <h1>Почему США, Корея или Китай?</h1>
           </Col>
           <Col span={24} className="delivery-reasons__content">
             <div className="delivery-reasons__content-sub">
@@ -44,7 +44,7 @@ const DeliveryReasonsRoot = () => {
                   </div>
                   <div>Прозрачная история</div>
                 </div>
-                <div className="reason-item__content">Автомобили из США и Кореи имеют полную историю обслуживания, которую можно проверить до покупки. В отчетах Carfax и Autocheck фиксируется пробег, что исключает его "открутку".</div>
+                <div className="reason-item__content">Автомобили из США, Кореи и Китая имеют полную историю обслуживания, которую можно проверить до покупки. В отчетах Carfax и Autocheck фиксируется пробег, что исключает его "открутку".</div>
               </div>
               <div className="reason-item reason-item--last">
                 <div className="reason-item__header">
@@ -53,7 +53,7 @@ const DeliveryReasonsRoot = () => {
                   </div>
                   <div>Экономия до 40-50%</div>
                 </div>
-                <div className="reason-item__content">Реальная экономия с учетом доставки, таможенной очистки, ремонта может достигать вплоть до 50%. Это значительная выгода и грамотное вложение денежных средств.</div>
+                <div className="reason-item__content">Реальная экономия с учетом доставки, всех платежей и ремонта может достигать вплоть до 50%. Это значительная выгода и грамотное вложение денежных средств.</div>
               </div>
             </div>
           </Col>

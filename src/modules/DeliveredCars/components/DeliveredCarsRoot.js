@@ -23,7 +23,7 @@ const DeliveredCarsRoot = () => {
     <Row className="delivered-cars-root">
       <Col span={24} className="delivered-cars-wrapper">
         <Col span={24} className="delivered-cars-block">
-          <Carousel maxLength={deliveredCars.length} title='Доставленные автомобили для наших клиентов'>
+          <Carousel maxLength={deliveredCars.length} title='Последние доставленные автомобили'>
             {deliveredCars.map((item) => (
               <div className="carousel_item">
                 <img src={`http://localhost:5000/${item.image}`} alt="image" />

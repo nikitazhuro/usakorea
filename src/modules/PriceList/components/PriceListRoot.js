@@ -34,7 +34,7 @@ const PriceListRoot = () => {
                 </div>
                 <div className="price-list__content__conditions__item">
                   <ConditionItem title="Консультация по вопросу оплаты (банк, комиссия и тд)" />
-                  <ConditionItem title="Своевременное предоставление информации движении т/с" />
+                  <ConditionItem title="Своевременное предоставление информации о движении т/с" />
                   <ConditionItem title="Консультация по таможенному оформлению" />
                   <ConditionItem title="Обратная связь 24/7" />
                 </div>
