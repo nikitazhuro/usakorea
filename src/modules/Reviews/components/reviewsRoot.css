@@ -18,23 +18,23 @@
 
 .reviews-block .right_arrow:not(.disableArrow),
 .reviews-block .left_arrow:not(.disableArrow) {
-  border: 1px solid #DCDCDC;
-  background-color: #F8F8F8;
+  border: 1px solid #34343D;
+  background-color: #F5F5F5;
 }
 
 .reviews-block .right_arrow.disableArrow,
 .reviews-block .left_arrow.disableArrow {
-  border: 1px solid #DCDCDC;
-  background-color: #F5F5F5!important;
+  border: 1px solid #34343D;
+  /* background-color: #F5F5F5!important; */
 }
 .reviews-block .right_arrow.disableArrow svg,
 .reviews-block .left_arrow.disableArrow svg{
-  color: #DCDCDC;
+  color: #34343D;
 }
 
 .reviews-block .right_arrow svg,
 .reviews-block .left_arrow svg{
-  color: #DCDCDC;
+  color: #34343D;
 }
 
 .reviews-block .right_arrow:not(.disableArrow):hover,
