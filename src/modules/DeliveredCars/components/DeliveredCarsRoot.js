@@ -26,7 +26,7 @@ const DeliveredCarsRoot = () => {
           <Carousel maxLength={deliveredCars.length} title='Последние доставленные автомобили'>
             {deliveredCars.map((item) => (
               <div className="carousel_item">
-                <img src={`http://localhost:5000/${item.image}`} alt="image" />
+                <img src={`https://api.autosaya.by/${item.image}`} alt="image" />
               </div>
             ))}
           </Carousel>
