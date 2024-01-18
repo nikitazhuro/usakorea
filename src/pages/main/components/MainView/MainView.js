@@ -5,7 +5,7 @@ import { ReactComponent as CarIcon } from '../../../../assets/car.svg';
 import { ReactComponent as CalcIcon } from '../../../../assets/calc.svg';
 import { ReactComponent as CertIcon } from '../../../../assets/cert.svg';
 
-import main from '../../../../assets/www.png';
+import main from '../../../../assets/main.png';
 import wheel from '../../../../assets/wheel.png';
 
 import './mainView.css';

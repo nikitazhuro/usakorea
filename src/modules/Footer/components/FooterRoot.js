@@ -18,7 +18,7 @@ const FooterRoot = () => {
           <div className="footer-content__item footer-item">
             <h4 className="footer-item__title">Реквизиты</h4>
             <div className="footer-item__content requisites">
-              ИП Гапонов Николай Анатольевич УНП 491626991BY57 ALFA 3013 2C31 2100 1027 0000 ЗАО "Альфа-Банк" 220013,г. Минск, ул. Сурганова, 43-47 ALFABY2X
+              ИП Гапонов Николай Анатольевич УНП 491626991 BY57 ALFA 3013 2C31 2100 1027 0000 ЗАО "Альфа-Банк" 220013,г. Минск, ул. Сурганова, 43-47 ALFABY2X
             </div>
           </div>
           <div className="footer-content__item footer-item">
@@ -40,8 +40,8 @@ const FooterRoot = () => {
               <h4 className="footer-item__title">Телефоны</h4>
               <div className="footer-item__content">
                 <div>+375 29 694 34 30</div>
-                <div>+375 44 757 92 57</div>
-                <div>+375 33 636 88 89</div>
+                <div>+375 44 564 67 36</div>
+                <div>+375 44 720 73 75</div>
               </div>
             </div>
             <div className="footer-item__telegram">

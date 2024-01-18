@@ -2,7 +2,7 @@ import { Col, Row } from 'antd';
 
 import './howWeWorkRoot.css';
 
-import image from '../../../assets/3.png';
+import image from '../../../assets/how-we-work-car.png';
 
 const howWeWorkList = [
   { count: '01', title: 'Заключение договора и оплата наших услуг' },
