@@ -1,9 +1,10 @@
 import axios from 'axios';
 
-const url = 'https://api.autosaya.by/'
+const host_server = 'https://api.autosaya.by/';
+const host_local = 'http://localhost:5000/'
 
 const $host = axios.create({
-  baseURL: url,
+  baseURL: host_server,
 });
 
 export {
