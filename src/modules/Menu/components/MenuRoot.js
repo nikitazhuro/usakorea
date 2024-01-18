@@ -77,7 +77,7 @@ const MenuRoot = () => {
               </Button>
             </Col>
             <Col className="menu-actions__item">
-              <Button className="menu-actions__item--phone" href="tel:+375256172464" target="_blank">
+              <Button className="menu-actions__item--phone" href="tel:+375447579257" target="_blank">
                 <PhoneIcon />
               </Button>
             </Col>
