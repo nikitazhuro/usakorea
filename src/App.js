@@ -9,7 +9,7 @@ import MenuRoot from './modules/Menu';
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize("UA-298147875-1");
+    ReactGA.initialize("UA-299599591-1");
   }, []);
 
   return (
