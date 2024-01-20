@@ -60,10 +60,7 @@
   background-color: white;
   width: 100%;
   padding: 40px;
-  height: -moz-available;
-  height: -webkit-fit-content;
-  height: -webkit-fill-available;
-  min-height: -webkit-fill-available
+  height: calc(100% - 80px);
 }
 
 .review-item__content {
@@ -130,6 +127,7 @@
   }
   .review-item {
     padding: 24px;
+    height: calc(100% - 48px);
   }
   .reviews-root .carousel_header__title {
     font-size: 24px;
