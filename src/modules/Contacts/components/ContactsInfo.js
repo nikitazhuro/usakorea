@@ -30,7 +30,7 @@ const ContactsInfo = () => {
               <>
                 <div className="contacts-info__item--mob">
                   <h3>Адрес</h3>
-                  <div>ул.Ветковская 1</div>
+                  <div className="address-block"><span>Гомель, </span><span>ул.Ветковская 1</span></div>
                 </div>
                 <div className="contacts-info__item--mob">
                   <h3>Email</h3>

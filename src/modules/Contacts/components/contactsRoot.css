@@ -223,6 +223,18 @@
   }
 }
 
+@media screen and (max-width: 486px) {
+  .address-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-info__item--mob:first-child {
+    padding-right: 0;
+    width: calc(50% - 24px);
+  }
+}
+
 @media screen and (max-width: 470px) {
   .mail-block {
     display: flex;
