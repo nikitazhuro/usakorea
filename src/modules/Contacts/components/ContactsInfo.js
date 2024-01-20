@@ -16,14 +16,14 @@ const ContactsInfo = () => {
       <div className="contacts-info__row">
         <div className="contacts-info__item">
           <h3>Реквизиты</h3>
-          <div>ИП Гапонов Николай Анатольевич УНП 491626991 BY57 ALFA 3013 2C31 2100 1027 0000 ЗАО "Альфа-Банк" 220013,г. Минск, ул. Сурганова, 43-47 ALFABY2X</div>
+          <div>ИП Гапонов Николай Анатольевич УНП 491626991 BY57 ALFA 3013 2C31 2100 1027 0000 ЗАО "Альфа-Банк" 220013, г. Минск, ул. Сурганова, 43-47 ALFABY2X</div>
         </div>
         <div className="contacts-info__item contacts-info__item--second">
           {!isMobile
             ? (
               <>
                 <h3>Адрес</h3>
-                <div>Гомель,ул.Ветковская 1</div>
+                <div>Гомель, ул.Ветковская 1</div>
               </>
             )
             : (

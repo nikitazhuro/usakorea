@@ -24,14 +24,14 @@ const FooterRoot = () => {
           <div className="footer-content__item footer-item">
             <h4 className="footer-item__title">Реквизиты</h4>
             <div className="footer-item__content requisites">
-              ИП Гапонов Николай Анатольевич УНП 491626991 BY57 ALFA 3013 2C31 2100 1027 0000 ЗАО "Альфа-Банк" 220013,г. Минск, ул. Сурганова, 43-47 ALFABY2X
+              ИП Гапонов Николай Анатольевич УНП 491626991 BY57 ALFA 3013 2C31 2100 1027 0000 ЗАО "Альфа-Банк" 220013, г. Минск, ул. Сурганова, 43-47 ALFABY2X
             </div>
           </div>
           <div className="footer-content__item footer-item">
             <div className="footer-item-block">
               <h4 className="footer-item__title">Адрес</h4>
               <div className="footer-item__content">
-                Гомель,ул.Ветковская 1
+                Гомель, ул.Ветковская 1
               </div>
             </div>
             <div className="footer-item-block">
@@ -63,7 +63,7 @@ const FooterRoot = () => {
 
       <Col span={24} className="footer-wrapper">
         <Col span={24} className="footer-add-info">
-          <div>© 2023 USAKOREA. Все права защищены</div>
+          <div>© 2024 AUTOSAYA. Все права защищены</div>
         </Col>
       </Col>
     </Row>
