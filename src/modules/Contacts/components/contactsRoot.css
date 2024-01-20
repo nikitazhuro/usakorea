@@ -222,3 +222,10 @@
     font-size: 15px;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .mail-block {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -30,11 +30,11 @@ const ContactsInfo = () => {
               <>
                 <div className="contacts-info__item--mob">
                   <h3>Адрес</h3>
-                  <div>Гомель,ул.Ветковская 1</div>
+                  <div>ул.Ветковская 1</div>
                 </div>
                 <div className="contacts-info__item--mob">
                   <h3>Email</h3>
-                  <div>usakoreaby@yandex.ru</div>
+                  <div className="mail-block"><span>usakoreaby</span><span>@yandex.ru</span></div>
                 </div>
               </>
             )
