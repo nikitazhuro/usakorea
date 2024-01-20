@@ -39,9 +39,7 @@
 }
 
 .footer-item__logo {
-  width: 180px;
-  height: 64px;
-  background-color: white;
+  width: 120px;
 }
 
 .footer-logo .footer-item__telegram {
@@ -112,8 +110,7 @@
     font-size: 14px;
   }
   .footer-item__logo {
-    width: 120px;
-    height: 48px;
+    width: 100px;
   }
   .footer-item__telegram {
     width: 28px;

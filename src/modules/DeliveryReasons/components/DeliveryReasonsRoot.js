@@ -24,7 +24,7 @@ const DeliveryReasonsRoot = () => {
                   </div>
                   <div>Качество сборки</div>
                 </div>
-                <div className="reason-item__content">Лучшие автомобили в мире делают именно для рынка Америки и к качеству сборки предъявляются самые жесткие требования. Надежно и просто - главный девиз американских авто.</div>
+                <div className="reason-item__content">Лучшие автомобили в мире делают именно для рынка Америки, и к качеству сборки предъявляются самые жесткие требования. Надежно и просто - главный девиз американских авто.</div>
               </div>
               <div className="reason-item">
                 <div className="reason-item__header">
@@ -33,7 +33,7 @@ const DeliveryReasonsRoot = () => {
                   </div>
                   <div>Комплектация</div>
                 </div>
-                <div className="reason-item__content">Для американского и корейского рынка комплектации изначально более полные и богатые, которые порадуют даже самого искушенного автолюбителя.</div>
+                <div className="reason-item__content">Для американского и корейского рынка комплектации изначально более полные и богатые, они порадуют даже самого искушенного автолюбителя.</div>
               </div>
             </div>
             <div className="delivery-reasons__content-sub">
@@ -44,7 +44,7 @@ const DeliveryReasonsRoot = () => {
                   </div>
                   <div>Прозрачная история</div>
                 </div>
-                <div className="reason-item__content">Автомобили из США, Кореи и Китая имеют полную историю обслуживания, которую можно проверить до покупки. В отчетах Carfax и Autocheck фиксируется пробег, что исключает его "открутку".</div>
+                <div className="reason-item__content">Автомобили из США, Кореи и Китая имеют полную историю обслуживания, которую можно проверить до покупки. В отчётах фиксируется пробег, ремонтные работы после ДТП и тд.</div>
               </div>
               <div className="reason-item reason-item--last">
                 <div className="reason-item__header">

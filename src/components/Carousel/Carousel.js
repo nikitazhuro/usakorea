@@ -5,7 +5,13 @@ import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 
 import './carousel.css';
 
-const Carousel = ({ children, title, maxLength }) => {
+const Carousel = ({
+  children,
+  title,
+  maxLength,
+  addReview,
+  addReviewHandler,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const [defaultTransform, setDefaultTransForm] = useState(50);
@@ -53,6 +59,9 @@ const Carousel = ({ children, title, maxLength }) => {
         {title && (
           <h1 className='carousel_header__title'>
             {title}
+            {addReview && (
+              <span onClick={addReviewHandler} className='add-review'>Оставить отзыв</span>
+            )}
           </h1>
         )}
         <div className='carousel_header__nav'>

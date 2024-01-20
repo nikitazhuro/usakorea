@@ -62,7 +62,8 @@
   padding: 40px;
   height: -moz-available;
   height: -webkit-fit-content;
-  height: fit-content;
+  height: -webkit-fill-available;
+  min-height: -webkit-fill-available
 }
 
 .review-item__content {

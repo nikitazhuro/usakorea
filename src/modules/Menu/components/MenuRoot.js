@@ -2,6 +2,8 @@ import { Button, Col, Row } from "antd";
 import { Link } from "react-scroll";
 import { useState } from "react";
 
+import logo_black from '../../../assets/logo_gray.png';
+
 import './menuRoot.css';
 
 import { ReactComponent as MailIcon } from '../../../assets/Mail.svg';
@@ -20,6 +22,7 @@ const MenuRoot = () => {
       <Row className="menu-wrapper">
         <Col span={24} className="menu">
           <Col className="menu-list">
+            <img src={logo_black} width={50} />
             <Col className="menu-item">
               <Link activeClass="active" smooth spy to="main">
                 Главная
@@ -67,7 +70,7 @@ const MenuRoot = () => {
           </Col>
           <Col className="menu-actions">
             <Col className="menu-actions__item">
-              <Button className="menu-actions__item--phone" href="https://t.me/SaYaAuto" target="_blank">
+              <Button className="menu-actions__item--phone" href="https://t.me/+hmF--w1c5L45NDZi" target="_blank">
                 <TelegramIcon />
               </Button>
             </Col>

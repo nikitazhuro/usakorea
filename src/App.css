@@ -1,3 +1,6 @@
 .ant-modal .ant-modal-close {
   color: #294281;
 }
+.ant-rate .ant-rate-star-second {
+  color: rgba(217, 217, 217, 0.20);
+}

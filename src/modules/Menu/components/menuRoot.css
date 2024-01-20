@@ -30,6 +30,7 @@
   justify-content: space-between;
   font-weight: 600;
   text-transform: uppercase;
+  align-items: center;
 }
 
 .menu-item {

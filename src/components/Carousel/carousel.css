@@ -26,6 +26,24 @@
   display: flex;align-items: center;
 }
 
+.add-review {
+  color: #34343D;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.3px;
+  margin-left: 30px;
+  text-decoration-style: dashed;
+  border-bottom: 1px dashed #999;
+  display: inline;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.add-review:hover {
+  color: #b9b9b9;
+  border-bottom-color: #b9b9b9;
+}
+
 .carousel_content {
   transition: all .2s linear;
   display: flex;
@@ -106,9 +124,28 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .add-review {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .carousel_header__title {
     font-size: 24px;
     line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .carousel_header__title {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+  .add-review {
+    font-size: 14px;
+    margin-left: 0;
   }
 }
