@@ -1,3 +1,4 @@
+import { Tooltip } from "antd";
 import { useEffect, useState } from "react";
 
 const ContactsInfo = () => {
@@ -44,9 +45,15 @@ const ContactsInfo = () => {
         <div className="contacts-info__item">
           <h3>Телефоны</h3>
           <div>
-            <div>+375 29 694 34 30</div>
-            <div>+375 44 564 67 36</div>
-            <div>+375 44 720 73 75</div>
+            <Tooltip title="Николай" color="#122e74" placement="right">
+              <div className="phone-num-item">+375 29 694 34 30</div>
+            </Tooltip>
+            <Tooltip title="Александр" color="#122e74" placement="right">
+              <div className="phone-num-item">+375 44 564 67 36</div>
+            </Tooltip>
+            <Tooltip title="Яков" color="#122e74" placement="right">
+              <div className="phone-num-item">+375 44 720 73 75</div>
+            </Tooltip>
           </div>
 
         </div>

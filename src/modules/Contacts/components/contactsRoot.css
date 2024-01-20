@@ -64,6 +64,10 @@
   font-weight: 600;
 }
 
+.phone-num-item {
+  width: fit-content;
+}
+
 .contacts-info__item div {
   color: #34343D;
   font-size: 20px;
