@@ -32,6 +32,9 @@
   text-transform: uppercase;
   align-items: center;
 }
+.menu-list img {
+  width: 50px;
+}
 
 .menu-item {
   cursor: pointer;
@@ -88,6 +91,9 @@
 }
 
 @media screen and (max-width: 992px) {
+  .menu-list img {
+    width: 40px;
+  }
   .menu-wrapper {
     height: 56px;
   }
@@ -95,8 +101,14 @@
     width: 56px;
   }
 }
+.mobile-logo {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
+  .mobile-logo {
+    display: none;
+  }
   .menu-list {
     display: none;
   }

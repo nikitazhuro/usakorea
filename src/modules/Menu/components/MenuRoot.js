@@ -22,7 +22,7 @@ const MenuRoot = () => {
       <Row className="menu-wrapper">
         <Col span={24} className="menu">
           <Col className="menu-list">
-            <img src={logo_black} width={50} />
+            <img src={logo_black} />
             <Col className="menu-item">
               <Link activeClass="active" smooth spy to="main">
                 Главная
@@ -67,6 +67,9 @@ const MenuRoot = () => {
               <span className="bar"></span> <span className="bar"></span>
               <span className="bar"></span>
             </div>
+          </Col>
+          <Col className="mobile-logo">
+            <img src={logo_black} width={40} />
           </Col>
           <Col className="menu-actions">
             <Col className="menu-actions__item">

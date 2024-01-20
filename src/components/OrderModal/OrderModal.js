@@ -83,7 +83,7 @@ const OrderModal = ({
           <input
             type="text"
             className={`order-modal-content__input ${!validationFields.name ? 'order-modal-content__input--error' : ''}`}
-            placeholder='Имя*'
+            placeholder='Ваше имя*'
             value={state.name}
             onChange={(e) => {
               setState((prev) => ({ ...prev, name: e.target.value }));

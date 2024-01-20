@@ -66,7 +66,7 @@ const NeedConsultationRoot = () => {
               <input
                 type="text"
                 className={`consult-wrapper__input ${!validationFields.name ? 'consult-wrapper__input--error' : ''}`}
-                placeholder='Имя*'
+                placeholder='Ваше имя*'
                 value={state.name}
                 onChange={(e) => {
                   setState((prev) => ({ ...prev, name: e.target.value }));
