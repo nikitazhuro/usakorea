@@ -7,6 +7,7 @@ import Carousel from "../../../components/Carousel/Carousel";
 import { useEffect, useState } from "react";
 import { getLastFiveReviewsRequest } from "../../../lib/api/reviewsApi";
 import ReviewModal from "../../../components/ReviewModal/ReviewModal";
+import CutReview from "./CutReview";
 
 const ReviewsRoot = () => {
   const [data, setData] = useState([]);
@@ -23,6 +24,7 @@ const ReviewsRoot = () => {
   useEffect(() => {
     getReviews()
   }, [])
+
   return (
     <>
       <ReviewModal setIsOpen={setOpen} isOpen={open} />
@@ -42,7 +44,7 @@ const ReviewsRoot = () => {
                           </svg>
                         ))}
                       </div>
-                      <div className="review-content__comment">{comment.comment}</div>
+                      <CutReview comment={comment.comment} />
                       <div className="review-content__date">{dayjs(comment.date).format('DD.MM.YY')}</div>
                     </div>
                   </div>
