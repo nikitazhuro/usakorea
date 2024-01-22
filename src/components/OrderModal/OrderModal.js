@@ -1,9 +1,11 @@
-import { Button, Col, Modal, Row } from "antd";
+import { Col, Modal, Row } from "antd";
+import { useState } from "react";
 
 import './orderModal.css';
 
 import { createOrderRequest } from '../../lib/api/orderApi';
-import { useState } from "react";
+import { ReactComponent as Complete } from "../../assets/complete.svg";
+
 
 const OrderModal = ({
   isOpen,
@@ -21,6 +23,7 @@ const OrderModal = ({
     name: true,
     number: true,
   });
+  const [isCompleted, setIsCompleted] = useState(false);
 
   const confirm = async () => {
     if (!checked) {
@@ -44,13 +47,13 @@ const OrderModal = ({
     }
 
     await createOrderRequest(config);
-
-    onClose();
+    setIsCompleted(true);
   }
 
   const onClose = () => {
     setIsOpen(false);
     setError(false);
+    setChecked(false);
     setValidationFields({
       name: true,
       number: true,
@@ -60,7 +63,10 @@ const OrderModal = ({
       number: '',
       budget: '',
       userComment: '',
-    })
+    });
+    setTimeout(() => {
+      setIsCompleted(false);
+    }, [0])
   }
 
   return (
@@ -72,68 +78,86 @@ const OrderModal = ({
       onCancel={onClose}
       className="order-modal"
       footer={
-        <Row className="order-modal-content__submit">
-          <button onClick={confirm}>Подтвердить</button>
-        </Row>
+        isCompleted
+          ? null
+          : (
+            <Row className="order-modal-content__submit">
+              <button onClick={confirm}>Подтвердить</button>
+            </Row>
+          )
       }
     >
       <Row className="order-modal-content">
-        <Col span={24}>
-          <h3 className="order-modal-content__title">Оформить заявку</h3>
-          <input
-            type="text"
-            className={`order-modal-content__input ${!validationFields.name ? 'order-modal-content__input--error' : ''}`}
-            placeholder='Ваше имя*'
-            value={state.name}
-            onChange={(e) => {
-              setState((prev) => ({ ...prev, name: e.target.value }));
-              setValidationFields((prev) => ({ ...prev, name: true }));
-            }}
-          />
-          <input
-            type="text"
-            className={`order-modal-content__input ${!validationFields.number ? 'order-modal-content__input--error' : ''}`}
-            placeholder='Телефон*'
-            value={state.number}
-            onChange={(e) => {
-              const reg = /^\+?[0-9]*$/g;
+        {isCompleted
+          ? (
+            <Col span={24} className="review-complete">
+              <Complete />
+              <h1>
+                <div>
+                  Ваша заявка принята!
+                </div>
+                <div>скоро с вами свяжемся!</div>
+              </h1>
+            </Col>
+          )
+          : (
+            <Col span={24}>
+              <h3 className="order-modal-content__title">Оформить заявку</h3>
+              <input
+                type="text"
+                className={`order-modal-content__input ${!validationFields.name ? 'order-modal-content__input--error' : ''}`}
+                placeholder='Ваше имя*'
+                value={state.name}
+                onChange={(e) => {
+                  setState((prev) => ({ ...prev, name: e.target.value }));
+                  setValidationFields((prev) => ({ ...prev, name: true }));
+                }}
+              />
+              <input
+                type="text"
+                className={`order-modal-content__input ${!validationFields.number ? 'order-modal-content__input--error' : ''}`}
+                placeholder='Телефон*'
+                value={state.number}
+                onChange={(e) => {
+                  const reg = /^\+?[0-9]*$/g;
 
-              if (e.target.value.match(reg)) {
-                setState((prev) => ({ ...prev, number: e.target.value }));
-                setValidationFields((prev) => ({ ...prev, number: true }));
-              }
-            }}
-          />
-          <input
-            type="text"
-            className="order-modal-content__input"
-            placeholder='Бюджет'
-            value={state.budget}
-            onChange={(e) => setState((prev) => ({ ...prev, budget: e.target.value }))}
-          />
-          <textarea
-            type="text"
-            className="order-modal-content__input order-modal-content__input--last"
-            placeholder='Комментарий'
-            value={state.userComment}
-            onChange={(e) => setState((prev) => ({ ...prev, userComment: e.target.value }))}
-          />
-          <div className={`order-modal-content__approve ${error ? 'error-checkbox' : ''}`}>
-            <input
-              class="custom-checkbox"
-              id="myCheckbox"
-              type="checkbox"
-              checked={checked}
-              onClick={(e) => {
-                setError(false);
-                setChecked(e.target.checked);
-              }}
-            />
-            <label for="myCheckbox">
-              <div>Нажимая на кнопку, я даю <span>согласие на обработку персональных данных</span></div>
-            </label>
-          </div>
-        </Col>
+                  if (e.target.value.match(reg)) {
+                    setState((prev) => ({ ...prev, number: e.target.value }));
+                    setValidationFields((prev) => ({ ...prev, number: true }));
+                  }
+                }}
+              />
+              <input
+                type="text"
+                className="order-modal-content__input"
+                placeholder='Бюджет'
+                value={state.budget}
+                onChange={(e) => setState((prev) => ({ ...prev, budget: e.target.value }))}
+              />
+              <textarea
+                type="text"
+                className="order-modal-content__input order-modal-content__input--last"
+                placeholder='Комментарий'
+                value={state.userComment}
+                onChange={(e) => setState((prev) => ({ ...prev, userComment: e.target.value }))}
+              />
+              <div className={`order-modal-content__approve ${error ? 'error-checkbox' : ''}`}>
+                <input
+                  class="custom-checkbox"
+                  id="myCheckbox"
+                  type="checkbox"
+                  checked={checked}
+                  onClick={(e) => {
+                    setError(false);
+                    setChecked(e.target.checked);
+                  }}
+                />
+                <label for="myCheckbox">
+                  <div>Нажимая на кнопку, я даю <span>согласие на обработку персональных данных</span></div>
+                </label>
+              </div>
+            </Col>
+          )}
       </Row>
     </Modal>
   )
