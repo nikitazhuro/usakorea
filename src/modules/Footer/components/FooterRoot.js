@@ -46,8 +46,8 @@ const FooterRoot = () => {
               <h4 className="footer-item__title">Телефоны</h4>
               <div className="footer-item__content">
                 <div>+375 29 694 34 30</div>
-                <div>+375 44 564 67 36</div>
-                <div>+375 44 720 73 75</div>
+                <div>+375 44 467 75 55</div>
+                <div>+375 29 353 95 45</div>
               </div>
             </div>
             <div className="footer-item__telegram">

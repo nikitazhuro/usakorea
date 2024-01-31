@@ -49,10 +49,10 @@ const ContactsInfo = () => {
               <div className="phone-num-item">+375 29 694 34 30</div>
             </Tooltip>
             <Tooltip title="Александр" color="#122e74" placement="right">
-              <div className="phone-num-item">+375 44 564 67 36</div>
+              <div className="phone-num-item">+375 44 467 75 55</div>
             </Tooltip>
             <Tooltip title="Яков" color="#122e74" placement="right">
-              <div className="phone-num-item">+375 44 720 73 75</div>
+              <div className="phone-num-item">+375 29 353 95 45</div>
             </Tooltip>
           </div>
 
