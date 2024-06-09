@@ -72,6 +72,17 @@
   flex-direction: row;
 }
 
+.footer-item__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-item__socials--mobile {
+  display: flex;
+  gap: 8px;
+}
+
 .footer-item__telegram {
   border: 1px solid #FFF;
   width: 64px;
